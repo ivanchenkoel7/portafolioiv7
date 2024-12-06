@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://db.onlinewebfonts.com/c/3980c818f6ac2f0278711008c295bde4?family=Bellfort+Rough+Demo);
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Outline&family=Parkinsans:wght@300..800&family=Poller+One&family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Workbench&display=swap');
+
+
+:root {
+    --color-primary: #4d4d4d;
+    --color-secondary: #ffe600;
+    --color-base: #f0f0f0f0;
+    --color-forty: #000000;
+    --color-five: #C0C0C0;
+    --color-text: #003366;
+    --color-layout: #101010;
+    --color-layout2: #787878;
+}
+
+
+.area1p{
+    grid-area: 2 / 4 / 8 / 9;
+}
+
+.area2p{
+    grid-area: 2 / 9 / 8 / 14;
+}
+
+
+.area3p{
+    grid-area: 8 / 4 / 14 / 9;
+}
+
+.area4p{
+    grid-area: 8 / 9 / 14 / 14;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*aca comiendan los estilois del portfolio fuera de las areas*/
+
+
+.container__cards {
+    min-width: 100%;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    transition: opacity 0.5s ease, transform 0.5s ease; 
+
+
+}
+
+
+.container__cards.show {
+    transform: translateY(0); 
+    display: flex; 
+}
+
+
+
+.container__tarjeta {
+    width: 700px;
+    height: 350px; 
+
+}
+
+.tarjeta__link {
+    display: inline-block;
+
+}
+
+.container__tarjeta:hover .tarjeta__figure {
+    transform: perspective(600px) rotateY(180deg);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+.tarjeta__figure {
+    width: 705px;
+    height: 350px;
+    margin: 0;
+    position: relative;
+    border-radius: 14px;
+    transition: all 0.5s ease;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+
+}
+
+.figure__frente,
+.figure__atras {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    transition: all 0.5s ease;
+
+}
+
+.figure__frente {
+    display: block;
+    backface-visibility: hidden;
+
+}
+
+.figure__atras {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    background: rgba(1, 1, 1, 0.2);
+    /*border: 2px solid rgb(253, 252, 252);
+    border-style: ridge;*/
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(20px);
+}
+
+
+.figure__atras h2 {
+    font-size: 2.2rem;
+    font-family: Bellfort Rough Demo;
+    letter-spacing: 10px;
+    color: var(--color-secondary);
+    text-shadow: 1px 1px 1px var(--color-forty);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+
+}
+
+.figure__atras h3 {
+    font-size: 1.5rem;
+    font-family: "monserrat";
+    color: var(--text-colorsec);
+    text-shadow: 1px 1px 1px rgb(50, 50, 50);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    
+
+}
+
+
+.figure__atras p {
+    font-size: 1.8rem;
+    font-family: 'Monserrat';
+    color: var(--color-secondary);
+    text-shadow: 1px 1px 1px var(--color-forty);
+    margin: 0px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.figure__atras h5 {
+    font-size: 1.7rem;
+    font-family: 'Monserrat';
+    color: var(--color-secondary);
+    text-shadow: 1px 1px 1px var(--color-forty);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.proyect__tech{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+}
+
+.figure__background {
+    background-image: url('/src/assets/aixa_landing.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%;
+}
+
+.tarjeta__figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.proyect__tech .habilidades__dato{
+    color: var(--color-base);
+}
+
+.card__date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+}
+
+.skills__list:nth-child(1){
+    margin-right: 8px;
+}
+
+
+.skills__list:nth-child(2){
+    margin-right: 45px;
+}
+
+.skills__list:nth-child(3){
+    margin-right: 80px;
+}
+
+.figure__background2 {
+    background-image: url('/src/assets/aixa_ecome.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%;
+}
+
+
+.figure__background3{
+    background-image: url('/src/assets/aixa_gestion.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%;
+}
+
+.figure__background4{
+    background-image: url('/src/assets/Starblog.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%;
+}
+
+
+.skills__list2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    z-index: 9999;
+}

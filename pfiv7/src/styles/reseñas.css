@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://db.onlinewebfonts.com/c/3980c818f6ac2f0278711008c295bde4?family=Bellfort+Rough+Demo);
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Outline&family=Parkinsans:wght@300..800&family=Poller+One&family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Workbench&display=swap');
+
+
+:root {
+    --color-primary: #4d4d4d;
+    --color-secondary: #ffe600;
+    --color-base: #f0f0f0f0;
+    --color-forty: #000000;
+    --color-five: #C0C0C0;
+    --color-text: #003366;
+    --color-layout: #101010;
+    --color-layout2: #787878;
+}
+
+
+.area1r{
+    grid-area: 2 / 4 / 7 / 9;
+    background-image: url(/src/assets/backgris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.area2r{
+    grid-area: 2 / 9 / 7 / 14;
+    background-image: url(/src/assets/backgris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.area3r{
+    grid-area: 7 / 4 / 12 / 9;
+    background-image: url(/src/assets/backgris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.area4r{
+    grid-area: 7 / 9 / 12 / 14;
+    background-image: url(/src/assets/backgris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.area5r{
+    grid-area: 12 / 4 / 14 / 7;
+    background-image: url(/src/assets/negro_textura.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(30px);
+}
+
+.area6r{
+    grid-area: 12 / 7 / 14 / 11;
+    background-image: url(/src/assets/negro_textura.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.area7r{
+    grid-area: 12 / 11 / 14 / 14;
+    background-image: url(/src/assets/negro_textura.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*estilos de las reseñas*/
+
+
+.card {
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 704px;
+    height: 285px;
+    margin: 0;
+    padding: 0;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.user-image {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    margin-right: 15px;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.user-title,
+.user-location {
+    margin: 5px 0;
+    font-size: 15px;
+    font-family: 'Parkinsans', sans-serif;
+    color: var(--color-layout2);
+    font-weight: 400;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+
+}
+
+.stars {
+    color:var(--color-secondary);
+    margin-left: 10px;
+}
+
+.star {
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.star.filled {
+    color: var(--color-secondary);
+}
+
+.review-text {
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 15px;
+    font-family: 'Parkinsans', sans-serif;
+    color: var(--color-primary);
+    font-weight: 400;
+    width: 90%;
+}
+
+.foot__card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.connect-button {
+    background-color: var(--color-base);
+    color: #0077b5;
+    border: 2px solid #0077b5;
+    border-radius: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.connect-button:hover {
+    background-color: #0077b5;
+    color: var(--color-base);
+}
+
+.review-date {
+    font-size: 15px;
+    font-family: 'Parkinsans', sans-serif;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.frase__inspiradora{
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-base);
+    font-weight: 600;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.autor__name{
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-secondary);
+    font-weight: bolder;
+    text-align: center;
+    margin: 5px;
+}

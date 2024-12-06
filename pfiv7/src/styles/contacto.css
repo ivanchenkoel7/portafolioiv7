@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://db.onlinewebfonts.com/c/3980c818f6ac2f0278711008c295bde4?family=Bellfort+Rough+Demo);
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Outline&family=Parkinsans:wght@300..800&family=Poller+One&family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Workbench&display=swap');
+
+
+:root {
+    --color-primary: #4d4d4d;
+    --color-secondary: #ffe600;
+    --color-base: #f0f0f0f0;
+    --color-forty: #000000;
+    --color-five: #C0C0C0;
+    --color-text: #003366;
+    --color-layout: #101010;
+    --color-layout2: #787878;
+}
+
+
+
+
+.area1co{
+    grid-area: 2 / 4 / 9 / 9;
+    background-image: url(/src/assets/backgris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.area2co{
+    grid-area: 9 / 4 / 14 / 12;
+    background-image: url(/src/assets/backgris.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.area3co{
+    grid-area: 2 / 9 / 6 / 12;
+    background-image: url(/src/assets/negro_textura.png);
+}
+
+
+.area4co{
+    grid-area: 2 / 12 / 6 / 14;
+    background-image: url(/src/assets/negro_textura.png);
+}
+
+.area5co{
+    grid-area: 6 / 9 / 9 / 11;
+    background-image: url(/src/assets/backgris.jpg);
+}
+
+.area6co{
+    grid-area: 6 / 11 / 9 / 14;
+    background-image: url(/src/assets/negro_textura.png);
+}
+
+.area7co{
+    grid-area: 9 / 12 / 14 / 14;
+    background-image: url(/src/assets/negro_textura.png);
+}
+
+/*comienza el contacto*/
+
+.contacto__title{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-text);
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.contact__container{
+    display: flex;
+    flex-direction: row;
+    backdrop-filter: blur(30px);
+
+}
+
+.contact__info{
+    flex-basis: 33%;
+    padding: 0 2rem;
+    padding-right: 1rem;
+    border-right: 2px solid var(--color-principal);
+}
+
+.contact__form-box{
+    flex-basis: 65%;
+    padding: 0 2rem;
+    
+}
+
+.contact__data{
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+
+}  
+
+.contact__icon{
+    font-size: 3rem;
+    color: var(--color-icon);
+    margin-bottom: 1rem;
+}
+
+.contact__subtitle{
+    font-size: 20px;
+    margin-top: 2rem;
+    font-family: 'Monserrat';
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--color-base);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.form__container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.form__left{
+    flex-basis: 50%;
+    margin-right: 1.5rem;
+}
+
+.form__group{
+    position: relative;
+    margin-bottom: 2.5rem;
+
+}
+
+.form__input{
+    position: relative;
+    width: 75%;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1.2rem;
+    padding-right: 2.5rem;
+    border: 2px solid var(--color-text);
+    border-radius: 15px;
+    background-color: var(--color-base);
+    outline: none;
+    box-shadow: 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.25);
+    color: var(--color-text);
+    font-size: 20px;
+    line-height: 1.5rem;
+
+}
+
+.form__input:focus{
+    border: 3px solid var(--color-icon);
+    box-shadow: 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.15);
+}
+
+.form__label{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+    color: transparent;
+    font-family: 'Montserrat';
+    transition: all 300ms ease-in-out;
+    pointer-events: none;
+}
+
+.form__input:focus~label,
+.form__input:not(:placeholder-shown)~label{
+    top: -2rem;
+    left: 0rem;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.form__input::-webkit-input-placeholder{
+    color: var(--color-transparent);
+}
+
+.form__right{
+    flex-basis: 50%;
+    max-width: 50%;
+    max-height: 100%;
+
+}
+
+.form__group--textarea{
+    height: 100%;
+}
+
+.form__input--textarea{
+    display: block;
+    resize: none;
+    height: 100%;
+}
+
+.form__button{
+    padding: 12px 15px;
+    margin-left: 55px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    border: 2px solid var(--color-secondary);
+    color: var(--color-forty);
+    background: #ffe600;
+    background: linear-gradient(0deg, rgba(255,230,0,1) 0%, rgba(255,255,102,1) 66%, rgba(255,255,204,1) 100%);
+    border-radius: 15px;
+    box-shadow: 0 1rem 1rem -0.5rem rgba(255, 255, 255, 0.25);
+    cursor: pointer;
+    transition: all 300ms linear;
+
+}
+
+.form__button:hover{
+    background: var(--color-text);
+    color: var(--color-base);
+    border: 2px solid var(--color-text);
+    box-shadow: 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.25);
+}
+
+.contact__map {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact__iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img__contacto{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+
+}
+
+/*loader*/
+
+.loader {
+    width: 100%;
+    height: 12px;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.loader::before {
+    content: '';
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: #ffe600;
+    background: linear-gradient(0deg, rgba(255,230,0,1) 0%, rgba(255,255,102,1) 66%, rgba(255,255,204,1) 100%);
+    background-size: 15px 15px;
+    z-index: 10;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    width: 0%;
+    height: 100%;
+    background-color: #FFF;
+    position: absolute;
+    border-radius: 0 4px 4px 0;
+    top: 0;
+    left: 0;
+    animation: animFw 10s ease-in infinite;
+}
+
+
+@keyframes animFw {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
