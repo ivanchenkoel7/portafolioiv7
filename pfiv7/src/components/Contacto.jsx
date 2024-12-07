@@ -1,9 +1,18 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect }  from 'react';
+import React, { useState, useEffect } from 'react';
 import FotoChica from './FotoChica';
 import '../styles/Contacto.css';
 
 const Contacto = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const [status, setStatus] = useState('');
+
   useEffect(() => {
     setTimeout(() => {
       document.querySelector('#load-iframe-map').innerHTML = `
@@ -11,12 +20,54 @@ const Contacto = () => {
       `;
     }, 1000);
   }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus('Enviando...');
+
+    try {
+      const response = await fetch('https://blogpelis-back.onrender.com/api/contacto/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setStatus('Mensaje enviado con éxito');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      } else {
+        setStatus('Error al enviar el mensaje');
+      }
+    // eslint-disable-next-line no-unused-vars
+    } catch (error) {
+      setStatus('Error al enviar el mensaje');
+    }
+  };
+
   return (
-      <><div className="area area1a">
-      <div className="areaone">
-        <h1 className="title__grid">Contactame</h1>
+    <>
+      <div className="area area1a">
+        <div className="areaone">
+          <h1 className="title__grid">Contactame</h1>
+        </div>
       </div>
-    </div><FotoChica /><div className="area area3a">
+      <FotoChica />
+      <div className="area area3a">
         <div className="container__info">
           <h2 className="info__title">Contactame</h2>
           <h3 className="info__destacado">
@@ -25,66 +76,106 @@ const Contacto = () => {
             facilis sit mollitia.
           </h3>
         </div>
-      </div><div className="area area1co">
+      </div>
+      <div className="area area1co">
         <h2 className="contacto__title">¿Como puedo ayudarte?</h2>
         <section className="contact__form-box">
-          <form className="contact__form">
+          <form className="contact__form" onSubmit={handleSubmit}>
             <div className="form__container">
               <section className="form__left">
                 <div className="form__group">
-                  <input type="text" className="form__input" name="name" required placeholder="Nombre" />
+                  <input
+                    type="text"
+                    className="form__input"
+                    name="name"
+                    required
+                    placeholder="Nombre"
+                    value={formData.name}
+                    onChange={handleChange}
+                  />
                   <label htmlFor="name" className="form__label">Nombre</label>
                 </div>
 
                 <div className="form__group">
-                  <input type="email" className="form__input" name="email" required placeholder="Email" />
+                  <input
+                    type="email"
+                    className="form__input"
+                    name="email"
+                    required
+                    placeholder="Email"
+                    value={formData.email}
+                    onChange={handleChange}
+                  />
                   <label htmlFor="email" className="form__label">Email</label>
                 </div>
 
                 <div className="form__group">
-                  <input type="text" className="form__input" name="subject" required placeholder="Subject" />
+                  <input
+                    type="text"
+                    className="form__input"
+                    name="subject"
+                    required
+                    placeholder="Asunto"
+                    value={formData.subject}
+                    onChange={handleChange}
+                  />
                   <label htmlFor="subject" className="form__label">Asunto</label>
                 </div>
               </section>
               <section className="form__right">
                 <div className="form__group form__group--textarea">
-                  <textarea name="message" className="form__input form__input--textarea" required placeholder="Mensaje"></textarea>
+                  <textarea
+                    name="message"
+                    className="form__input form__input--textarea"
+                    required
+                    placeholder="Mensaje"
+                    value={formData.message}
+                    onChange={handleChange}
+                  ></textarea>
                   <label htmlFor="message" className="form__label">Mensaje</label>
                 </div>
               </section>
             </div>
             <input type="submit" className="form__button" value="Enviar Mensaje" />
           </form>
+          {status && <p>{status}</p>}
         </section>
-      </div><div className="area area2co">
+      </div>
+      <div className="area area2co">
         <div className="contact__map" id="load-iframe-map">
           <span className="loader"></span>
         </div>
-      </div><div className="area area3co">
+      </div>
+      <div className="area area3co">
         <div className="contact__data">
           <img width="72" height="72" src="https://img.icons8.com/color/72/filled-message.png" alt="filled-message" />
           <h2 className="contact__subtitle">ivanchenkoel7@gmail.com</h2>
         </div>
-      </div><div className="area area4co">
+      </div>
+      <div className="area area4co">
         <div className="contact__data">
           <img width="72" height="72" src="https://img.icons8.com/emoji/72/check-mark-button-emoji.png" alt="check-mark-button-emoji" />
           <h2 className="contact__subtitle">Desarrollador Freelance</h2>
         </div>
-      </div><div className="area area5co">
+      </div>
+      <div className="area area5co">
         <div className="img__contacto">
           <img src="/src/assets/iv7ico.png" alt="" className="logo__about" />
         </div>
-      </div><div className="area area6co">
+      </div>
+      <div className="area area6co">
         <div className="contact__data">
           <img width="72" height="72" src="https://img.icons8.com/color/72/whatsapp--v1.png" alt="whatsapp--v1" />
           <h2 className="contact__subtitle">+598 95604814</h2>
         </div>
-      </div><div className="area area7co">
+      </div>
+      <div className="area area7co">
         <div className="contact__data">
           <img width="64" height="64" src="https://img.icons8.com/arcade/64/marker.png" alt="marker" />
           <h2 className="contact__subtitle">Playa Hermosa, Uruguay</h2>
         </div>
-      </div></>
+      </div>
+    </>
   );
 };
 
