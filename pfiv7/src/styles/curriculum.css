@@ -54,7 +54,7 @@
 
 .area4c{
     grid-area: 2 / 4 / 14 / 7;
-    background-image: url(assets/backgris.webp);
+    background-image: url(public/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 
 .area5c{
     grid-area: 2 / 7 / 14 / 10;
-    background-image: url(assets/backgris.webp);
+    background-image: url(public/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1078,7 +1078,7 @@ color: var(--color-secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('/src/assets/frontend_developer.webp');
+    background-image: url('/public/assets/frontend_developer.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -1183,7 +1183,7 @@ color: var(--color-secondary);
 
 .area3cu {
     grid-area: 4 / 12 / 9 / 14;
-    background-image: url(/src/assets/backend_developer.webp);
+    background-image: url(/public/assets/backend_developer.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

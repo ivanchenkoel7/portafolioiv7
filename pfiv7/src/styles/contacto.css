@@ -22,7 +22,7 @@
 
 .area1co{
     grid-area: 2 / 4 / 9 / 9;
-    background-image: url(/src/assets/backgris.webp);
+    background-image: url(/public/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +34,7 @@
 
 .area2co{
     grid-area: 9 / 4 / 14 / 12;
-    background-image: url(/src/assets/backgris.webp);
+    background-image: url(/public/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -44,28 +44,28 @@
 
 .area3co{
     grid-area: 2 / 9 / 6 / 12;
-    background-image: url(/src/assets/negro_textura.webp);
+    background-image: url(/public/assets/negro_textura.webp);
 }
 
 
 .area4co{
     grid-area: 2 / 12 / 6 / 14;
-    background-image: url(/src/assets/negro_textura.webp);
+    background-image: url(/public/assets/negro_textura.webp);
 }
 
 .area5co{
     grid-area: 6 / 9 / 9 / 11;
-    background-image: url(/src/assets/backgris.webp);
+    background-image: url(/public/assets/backgris.webp);
 }
 
 .area6co{
     grid-area: 6 / 11 / 9 / 14;
-    background-image: url(/src/assets/negro_textura.webp);
+    background-image: url(/public/assets/negro_textura.webp);
 }
 
 .area7co{
     grid-area: 9 / 12 / 14 / 14;
-    background-image: url(/src/assets/negro_textura.webp);
+    background-image: url(/public/assets/negro_textura.webp);
 }
 
 .area3a-contacto {
@@ -343,7 +343,7 @@
 }
 
 .modal-content {
-    background-image: url(/src/assets/backgris.webp);
+    background-image: url(/public/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

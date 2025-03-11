@@ -5,7 +5,7 @@ const FotoChica = () => {
   return (
     <div className="area area2a">
     <div className="img__grid">
-    <img src="/src/assets/perfilfrente.webp" alt="Perfil de Ivan Garay" className="img__photo-chica" />
+    <img src="/public/assets/perfilfrente.webp" alt="Perfil de Ivan Garay" className="img__photo-chica" />
     </div>
     </div>
   )

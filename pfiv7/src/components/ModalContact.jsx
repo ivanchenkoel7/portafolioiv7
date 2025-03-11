@@ -34,7 +34,7 @@ const ModalContact = ({ onClose }) => {
     }
 
     try {
-      const response = await fetch('http://localhost:8000/api/contacto/', {
+      const response = await fetch('http://ivanchenkoel7.dev/api/contacto/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -138,7 +138,7 @@ const ModalContact = ({ onClose }) => {
               </section>
             </div>
             <ReCAPTCHA
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              sitekey="6LfE0OwqAAAAAJc0nM6JgyVUtlfm8-L4vTnlcjzc"
               onChange={handleRecaptchaChange}
             />
             <input

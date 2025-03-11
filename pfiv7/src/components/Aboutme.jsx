@@ -82,7 +82,7 @@ const Aboutme = () => {
         <div className="design__container">
           <div className="about__design">
             <div className="design__presentation">
-            <img src="/src/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
+            <img src="/public/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
               <h2 className="design__subtitule">Mi Marca Personal</h2>
             </div>
               <p className="design__text">
@@ -136,7 +136,7 @@ const Aboutme = () => {
           <hr className="servicio__hr2" />
 
           <div className="objetivos__mision2">
-            <p className="text__mision22">3+</p>
+            <p className="text__mision22">1+</p>
             <p className="text__mision2">
               Años de Experiencia<i className="fa-solid fa-book"></i>
             </p>

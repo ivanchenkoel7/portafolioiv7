@@ -149,7 +149,7 @@ const handleChange = (e) => {
               </section>
             </div>
             <ReCAPTCHA
-              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              sitekey="6LfE0OwqAAAAAJc0nM6JgyVUtlfm8-L4vTnlcjzc"
               onChange={handleRecaptchaChange}
             />
             <input type="submit" className="form__button" value="Enviar Mensaje" />
@@ -176,7 +176,7 @@ const handleChange = (e) => {
       </div>
       <div className="area area5co">
         <div className="img__contacto">
-          <img src="/src/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
+          <img src="/public/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
         </div>
       </div>
       <div className="area area6co">
