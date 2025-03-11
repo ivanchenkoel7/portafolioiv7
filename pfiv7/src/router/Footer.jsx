@@ -7,7 +7,7 @@ const Footer = () => {
         <footer className="footer__grid">
           <div className="footer__copy">
             <p className="footer__text">
-              &copy; 2024 Bento Design by Ivanchenkoel7
+              &copy; 2025 Bento Design by Ivanchenkoel7
             </p>
           </div>
         </footer>

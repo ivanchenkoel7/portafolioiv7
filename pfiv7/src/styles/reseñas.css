@@ -20,7 +20,7 @@
 
 .area1r{
     grid-area: 2 / 4 / 7 / 9;
-    background-image: url(/src/assets/backgris.jpg);
+    background-image: url(/src/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 
 .area2r{
     grid-area: 2 / 9 / 7 / 14;
-    background-image: url(/src/assets/backgris.jpg);
+    background-image: url(/src/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 
 .area3r{
     grid-area: 7 / 4 / 12 / 9;
-    background-image: url(/src/assets/backgris.jpg);
+    background-image: url(/src/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 
 .area4r{
     grid-area: 7 / 9 / 12 / 14;
-    background-image: url(/src/assets/backgris.jpg);
+    background-image: url(/src/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@
 
 .area5r{
     grid-area: 12 / 4 / 14 / 7;
-    background-image: url(/src/assets/negro_textura.png);
+    background-image: url(/src/assets/negro_textura.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@
 
 .area6r{
     grid-area: 12 / 7 / 14 / 11;
-    background-image: url(/src/assets/negro_textura.png);
+    background-image: url(/src/assets/negro_textura.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,10 +71,20 @@
 
 .area7r{
     grid-area: 12 / 11 / 14 / 14;
-    background-image: url(/src/assets/negro_textura.png);
+    background-image: url(/src/assets/negro_textura.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.area3a-reseñas {
+    grid-area: 6 / 1 / 14 / 4;
+    background: #ffe600;
+    background: linear-gradient(0deg, rgba(255,230,0,1) 0%, rgba(255,255,102,1) 66%, rgba(255,255,204,1) 100%);
+    display: flex;
+    flex-direction: column;
+
+    
 }
 
 
@@ -118,8 +128,8 @@
 
 .user-image {
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
+    width: 90px;
+    height: 90px;
     margin-right: 15px;
 }
 
@@ -150,11 +160,11 @@
 
 .stars {
     color:var(--color-secondary);
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .star {
-    font-size: 25px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
     color: var(--color-text);
     font-weight: bold;
@@ -165,13 +175,13 @@
 }
 
 .review-text {
-    margin-top: 10px;
-    margin-left: 15px;
-    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
     font-family: 'Parkinsans', sans-serif;
     color: var(--color-primary);
-    font-weight: 400;
-    width: 90%;
+    font-weight: 600;
+    width: 97%
 }
 
 .foot__card {

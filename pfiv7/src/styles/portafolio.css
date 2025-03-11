@@ -19,22 +19,42 @@
 
 
 .area1p{
-    grid-area: 2 / 4 / 8 / 9;
+    grid-area: 2 / 4 / 8 / 8;
 }
 
 .area2p{
-    grid-area: 2 / 9 / 8 / 14;
+    grid-area: 2 / 8 / 8 / 12;
 }
 
 
 .area3p{
-    grid-area: 8 / 4 / 14 / 9;
+    grid-area: 8 / 6 / 14 / 10;
 }
 
 .area4p{
-    grid-area: 8 / 9 / 14 / 14;
+    grid-area: 8 / 10 / 14 / 14;
 }
 
+.area5p{
+    grid-area: 2 / 12 / 8 / 14;
+    background-color: #000000;
+}
+
+.area6p{
+    grid-area: 8 / 4 / 14 / 6;
+    background-color: #000000;
+}
+
+
+.area3a-portfolio {
+    grid-area: 6 / 1 / 14 / 4;
+    background: #ffe600;
+    background: linear-gradient(0deg, rgba(255,230,0,1) 0%, rgba(255,255,102,1) 66%, rgba(255,255,204,1) 100%);
+    display: flex;
+    flex-direction: column;
+
+    
+}
 
 
 
@@ -103,7 +123,7 @@
 
 
 .tarjeta__figure {
-    width: 705px;
+    width: 560px;
     height: 350px;
     margin: 0;
     position: relative;
@@ -111,6 +131,7 @@
     transition: all 0.5s ease;
     transform-style: preserve-3d;
     transform: perspective(600px) rotateY(0deg);
+    top: 0px;
 
 }
 
@@ -205,7 +226,7 @@
 }
 
 .figure__background {
-    background-image: url('/src/assets/aixa_landing.png');
+    background-image: url('/src/assets/aixa_landing_1.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -236,7 +257,7 @@
 }
 
 .skills__list:nth-child(1){
-    margin-right: 8px;
+    margin-right: 25px;
 }
 
 
@@ -245,11 +266,11 @@
 }
 
 .skills__list:nth-child(3){
-    margin-right: 80px;
+    margin-right: 65px;
 }
 
 .figure__background2 {
-    background-image: url('/src/assets/aixa_ecome.png');
+    background-image: url('/src/assets/aixa_ecome.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -259,7 +280,7 @@
 
 
 .figure__background3{
-    background-image: url('/src/assets/aixa_gestion.png');
+    background-image: url('/src/assets/aixa_gestion.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -268,8 +289,26 @@
 }
 
 .figure__background4{
-    background-image: url('/src/assets/Starblog.png');
+    background-image: url('/src/assets/Starblog.webp');
     background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%;
+}
+
+.figure__background5{
+    background-image: url('/src/assets/cambio_logo.webp');
+    background-size:contain; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100%; 
+    height: 100%;
+}
+
+.figure__background6{
+    background-image: url('/src/assets/iv7-logoverde.webp');
+    background-size:contain; 
     background-position: center; 
     background-repeat: no-repeat; 
     width: 100%; 
@@ -285,4 +324,79 @@
     gap: 10px;
     margin-top: 10px;
     z-index: 9999;
+}
+
+
+.card__cartel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 80%;
+    background: var(--color-forty);
+    border-radius: 15px;
+    position: absolute;
+    top: 50px;
+    left: 65px;
+    z-index: 99999;
+    transition: all 0.5s ease;
+}
+
+.card__carteltwo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 280px;
+    background: var(--color-forty);
+    border-radius: 15px;
+    position: absolute;
+    top: 50px;
+    left: 155px;
+    z-index: 99999;
+    transition: all 0.5s ease;
+}
+
+.cartel__description{
+    font-family: Monserrat;
+    font-size: 16px;
+    color: var(--color-base);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    word-break: break-word;
+
+}
+
+.cartel__aclaracion{
+    font-family: bellfort rough demo;
+    font-size: 18px;
+    color: var(--color-secondary);
+    text-align: center;
+    margin-top: 10px;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    
+}
+
+
+.starblog__summary{
+    font-size: 2.2rem;
+    font-family: Bellfort Rough Demo;
+    letter-spacing: 10px;
+    color: var(--color-secondary);
+    text-shadow: 1px 1px 1px var(--color-forty);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
 }

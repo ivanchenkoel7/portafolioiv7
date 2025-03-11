@@ -54,7 +54,7 @@
 
 .area4c{
     grid-area: 2 / 4 / 14 / 7;
-    background-image: url(assets/backgris.jpg);
+    background-image: url(assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
 
 .area5c{
     grid-area: 2 / 7 / 14 / 10;
-    background-image: url(assets/backgris.jpg);
+    background-image: url(assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -343,6 +343,9 @@ color: var(--color-secondary);
 
 }
 
+
+
+
 .timeline__title{
     font-size: 15px;
     font-family: "parkinsans";
@@ -392,17 +395,17 @@ color: var(--color-secondary);
     opacity: 1;
 }
 
-.timeline_certificate { 
-    width: 410px; 
-    height: 200px; 
-    border-radius: 15px; 
+.timeline_certificate {
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
     visibility: hidden;
     opacity: 0;
-    position: absolute; 
-    top: -50px; 
-    left: 3px; 
-    z-index: 5; 
-    transition: visibility 0s, opacity 0.3s ease-in-out;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+    z-index: 5;
+    transition: visibility 0s, opacity 0.3sease-in-out;
 }
 
 .certificate__img { 
@@ -420,6 +423,34 @@ color: var(--color-secondary);
     opacity: 1; 
 }
 
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
 
 /*fin timline*/
@@ -566,8 +597,7 @@ color: var(--color-secondary);
     left: 0;
     right: 0;
     color: var(--color-base);
-    background: rgb(2,105,167);
-    background: linear-gradient(90deg, rgba(2,105,167,1) 0%, rgba(0,170,252,1) 100%);   
+    background: #663399; 
     text-align: center;
     border-radius: 15px;
     padding: 5px;
@@ -646,7 +676,7 @@ color: var(--color-secondary);
     top: 0; /* Cambiado de bottom a top */
     left: 0;
     right: 0;
-    color: var(--color-base);
+    color: var(--color-text);
     background: rgb(2,119,189);
     background: linear-gradient(90deg, rgba(2,119,189,1) 0%, rgba(138,211,255,1) 45%, rgba(252,221,128,1) 55%, rgba(255,193,7,1) 100%);     
     text-align: center;
@@ -881,8 +911,7 @@ color: var(--color-secondary);
     left: 0;
     right: 0;
     color: var(--color-base);
-    background: rgb(1,106,168);
-    background: linear-gradient(90deg, rgba(1,106,168,1) 0%, rgba(55,193,255,1) 100%);
+    background: #E64A19;
     text-align: center;
     border-radius: 15px;
     padding: 5px 2px 5px 2px;
@@ -1035,6 +1064,289 @@ color: var(--color-secondary);
 }
 
 
+.area6cu {
+    grid-area: 4 / 10 / 9 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/src/assets/frontend_developer.webp');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.about__container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    background-size: inherit;
+    background-position: inherit;
+    filter: grayscale(0%);
+    z-index: 1;
+    transition: filter 0.3s ease-in-out;
+}
+
+.about__container:hover::before {
+    filter: grayscale(100%);
+}
+
+.about__textbob {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    height: 85%;
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    z-index: 2;
+}
+
+.about__container:hover .about__textbob {
+    visibility: visible;
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subtitle__about {
+    font-size: 17px;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--color-secondary);
+    font-weight: bolder;
+    margin-top: 15px;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.habilidades2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin-top: 0;
+    z-index: 2;
+    transition: color 0.3s ease-in-out;
+    margin-left: 70px;
+
+
+}
+
+.habilidades2 strong{
+    font-family: "Montserrat";
+    font-size: 17px;
+    color: var(--color-base);
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+
+
+.area3cu {
+    grid-area: 4 / 12 / 9 / 14;
+    background-image: url(/src/assets/backend_developer.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.8s ease;
+    filter: grayscale(100%);
+}
+
+.area3cu:hover {
+    filter: none;
+    opacity: 1;
+}
+
+.area3cu:hover .info__dolor {
+    display: block;
+    animation: fadeIn 1s forwards;
+}
+
+.area3cu:hover .subtitle__dato {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+.area3cu:hover .habilidades {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInReverse 1s forwards;
+    animation-delay: 2s;
+    
+}
+
+
+
+.info__dolor {
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border-radius: 15px;
+    display: none;
+    transition: all 1s ease-in-out;
+}
+
+.subtitle__dato,
+.habilidades {
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+
+/*@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInReverse {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}*/
+
+.habilidades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    
+
+}
+
+
+.skills__list2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    z-index: 9999;
+}
+
+.skills__list2 img{
+    visibility: visible;
+    opacity: 1;
+
+}
+
+
+.habilidades__dato{
+    font-family: "Montserrat";
+    font-size: 17px;
+    color: var(--color-base);
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+
+.subtitle__dato {
+    font-size: 17px;
+    font-family: "Montserrat";
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--color-secondary);
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.area3a-curriculum {
+    grid-area: 6 / 1 / 14 / 4;
+    background: #ffe600;
+    background: linear-gradient(0deg, rgba(255,230,0,1) 0%, rgba(255,255,102,1) 66%, rgba(255,255,204,1) 100%);
+    display: flex;
+    flex-direction: column;
+
+    
+}
+
+
+/* Estilos para la barra de desplazamiento */
+.scrollable {
+    overflow-y: auto;
+  }
+  
+  .scrollable::-webkit-scrollbar {
+    width: 12px; 
+  }
+  
+  .scrollable::-webkit-scrollbar-track {
+    background: var(--color-base);
+    backdrop-filter: blur(10px); 
+    border-radius: 15px; 
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 15px; 
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb:hover {
+    background: var(--color-secondary); 
+  }
 
 
 

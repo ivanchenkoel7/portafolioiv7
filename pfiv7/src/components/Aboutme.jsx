@@ -2,10 +2,12 @@
 import React from 'react'
 import "../styles/aboutme.css";
 import FotoChica from './FotoChica';
+import '../styles/aboutme_responsive.css';
 
 const Aboutme = () => {
   return (
-    <><div className="area area1a">
+    <>
+    <div className="area area1a">
       <div className="areaone">
         <h1 className="title__grid">Sobre mi...</h1>
       </div>
@@ -13,74 +15,82 @@ const Aboutme = () => {
     
     <FotoChica />
       
-      <div className="area area3a">
+      <div className="area area3a-aboutme">
         <div className="design__subtitule">¿Que es lo que hago?</div>
         <div className="abouttodo__list">
           <li className="list__do">
-            <img
-              width="90"
-              height="90"
+            <img className='img__list'
+              width="85"
+              height="85"
               src="https://img.icons8.com/nolan/96/web-design.png"
               alt="web-design" />
             <div className="list__list">
               <h3 className="list__subtitle">Diseño Web</h3>
               <p className="list__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur natus assumenda autem inventore molestiae, quae
-                illum aut sunt corporis?.
+                Me encanta diseñar y desarrollar sitios web modernos y atractivos.
+                Utilizo tecnologías como HTML, CSS y JavaScript para crear sitios web.
+                Me gusta mucho el CSS y el diseño responsivo.
               </p>
             </div>
           </li>
           <li className="list__do">
-            <img width="90" height="90" src="https://img.icons8.com/nolan/90/programming.png" alt="programming" />
+            <img className='img__list'
+            width="85" height="85" src="https://img.icons8.com/nolan/90/programming.png" alt="programming" />
             <div className="list__list">
               <h3 className="list__subtitle">Desarrollo Backend</h3>
               <p className="list__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur natus assumenda autem inventore molestiae, quae illum aut sunt corporis?
+                Tengo experiencia en el desarrollo de aplicaciones web con Django.
+                Me gusta trabajar con bases de datos y crear APIs RESTful.
 
               </p>
             </div>
           </li>
 
           <li className="list__do">
-            <img width="90" height="90" src="https://img.icons8.com/nolan/90/windows10-personalization.png" alt="windows10-personalization" />
+            <img className='img__list'
+              width="85" height="85" src="https://img.icons8.com/nolan/90/windows10-personalization.png" alt="windows10-personalization" />
             <div className="list__list">
               <h3 className="list__subtitle">Diseño Gráfico</h3>
               <p className="list__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur natus assumenda autem inventore molestiae, quae illum aut sunt corporis?
+                Me encanta el diseño gráfico y la creación de contenido visual.
+                Utilizo herramientas como CorelDraw y Canva.
+                Tambien tengo conocimientos en After Effects y Blender.
 
               </p>
             </div>
           </li>
         </div>
+        
       </div><div className="area area4a">
         <header className="about__header">
           <article className="personal-info__bio">
             <h2 className="personal-info__titleone">
-              Me llamo <strong className="ivangaray">Ivan Garay</strong>, soy
+              Me llamo <strong className="ivangaray">Ivan Garay</strong> , soy
               Desarrollador Web
             </h2>
             <p className="personal-info__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              repellendus similique at voluptatum dicta explicabo quibusdam
-              aspernatur adipisci! Assumenda fugiat eligendi ullam esse porro
-              numquam exercitationem. Error sapiente quisquam amet.
+            Me defino como un apasionado Desarrollador Web con 3 años de experiencia.
+            Mi enfoque principal es el desarrollo frontend, utilizando tecnologías como HTML, CSS, JavaScript y React. 
+            También tengo experiencia en el desarrollo backend con Django y la creación de APIs RESTful.  
+            Me defino como un verdadero polifuncional. ME muevo y adapto a cualquier entorno ademas de ser una
+            persona con habilidades para reparar y solucionar problemas.
+            Tengo capacidad para arreglar pçs, reparar electrodomesticos y solucionar problemas de software.
             </p>
           </article>
         </header>
       </div><div className="area area5a">
         <div className="design__container">
-          <img src="assets/iv7ico.png" alt="" className="logo__about" />
           <div className="about__design">
-            <h2 className="design__subtitule">Mi Marca Personal</h2>
-            <p className="design__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
-              repellendus similique at voluptatum dicta explicabo quibusdam
-              aspernatur adipisci! Assumenda fugiat eligendi ullam esse porro
-              numquam exercitationem. Error sapiente quisquam amet.
-            </p>
+            <div className="design__presentation">
+            <img src="/src/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
+              <h2 className="design__subtitule">Mi Marca Personal</h2>
+            </div>
+              <p className="design__text">
+              Al momento de comenzar a transitar mi camino en el desarrollo web, también tomé la 
+              decisión de crear mi propia marca personal. Después de varios intentos,
+              logré encontrar la combinación perfecta para mi logo.
+              Fresco, moderno y con un toque de elegancia.
+              </p>
           </div>
         </div>
       </div><div className="area area6a">
@@ -107,16 +117,16 @@ const Aboutme = () => {
 
             <li className="personal-info__option">
               <span className="personal-info__title"
-              ><i className="fa-solid fa-mobile-screen-button"></i> Movil:</span>
-              <span className="personal-info__value">+59895604814</span>
+              ><i className="fa-brands fa-creative-commons-nd"></i> Experiencia:</span>
+              <span className="personal-info__value">Ventas, Logistica</span>
             </li>
 
             <li className="personal-info__option">
               <span className="personal-info__title"
-              ><i className="fa-solid fa-envelope-circle-check"></i>
-                Email:</span>
+              ><i className="fa-solid fa-users-gear"></i>
+                Skills:</span>
               <span className="personal-info__value"
-              >ivanchenkoel7@gmail.com</span>
+              >Dialogo, Compromiso</span>
             </li>
           </ul>
         </div>
@@ -144,7 +154,7 @@ const Aboutme = () => {
             </p>
           </div>
         </div>
-      </div><div className="area area9a">
+      </div>{/*<div className="area area9a">
         <div className="objetivos2">
           <h2 className="subtitle__mision222">Clientes</h2>
           <hr className="servicio__hr2" />
@@ -156,7 +166,24 @@ const Aboutme = () => {
             </p>
           </div>
         </div>
-      </div></>
+      </div>*/}
+      
+      <div className='area area10a'>
+        <div className="design__container">
+          <div className="about__design2">
+              <h2 className="design__subtitule2">Habilidades y Trayectoria</h2>
+              <p className="design__text2">
+              Desde que recuerdo, fui un enamorado de la tecnología. 
+              Desde mi adolescencia, era la persona que se destacaba en informática o que sabía arreglar un problema, o que podía ayudar a encontrar la solución a ese problema. Esto me llevó a una constante búsqueda de conocimientos en el área de la informática y la tecnología: 
+              reparación de PC, diseño gráfico, diseño 3D y, hoy dia, diseño web. 
+              Recientemente apliqué un poco de todas mis habilidades y reformé una PC que estaba siendo desechada, convirtiéndola en mi propio servidor casero con Ubuntu Server. 
+              Fueron muchos días y horas de lectura, de aprender nuevas cosas y adquirir nuevos conocimientos, para al final llegar a tener el servidor funcionando y desplegando desde allí mi aplicación, que en otro momento había guardado en otro lugar privado. En el camino, aprendí sobre servidores, sobre muchos comandos, IP, DNS, puertos, seguridad, proxy, etc. 
+              Fue una experiencia muy enriquecedora y tuve una gran ayuda de lo que es la IA. Una herramienta que te ayuda a encontrar soluciones mas rapido.
+              </p>
+          </div>
+        </div>
+      </div>
+      </>
   )
 }
 

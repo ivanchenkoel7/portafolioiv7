@@ -1,0 +1,571 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://db.onlinewebfonts.com/c/3980c818f6ac2f0278711008c295bde4?family=Bellfort+Rough+Demo);
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Outline&family=Parkinsans:wght@300..800&family=Poller+One&family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Workbench&display=swap');
+
+
+:root {
+    --color-primary: #4d4d4d;
+    --color-secondary: #ffe600;
+    --color-base: #f0f0f0f0;
+    --color-forty: #000000;
+    --color-five: #C0C0C0;
+    --color-text: #003366;
+    --color-layout: #101010;
+    --color-layout2: #787878;
+}
+
+@font-face{
+font-family: 'ambiguity';
+src: url('./fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+@media (max-width: 1440px){
+
+    .personal-info__titleone {
+        font-size: 19px;
+    }
+
+    .personal-info__description {
+        font-size: 13px;
+        width: 95%;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        word-break: break-word;
+        margin-top: 0px;
+        margin-bottom: 4px;
+        line-height: 1;
+    }
+
+
+    .ivangaray {
+        font-size: 15px;
+    }
+
+    .logo__about {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        top: 11px;
+    }
+
+    .design__text {
+        font-size: 12px;
+        width: 95%;
+        font-weight: 500;
+        /* word-break: break-word; */
+        margin-top: 1px;
+        margin-bottom: 2opx;
+    }
+    
+    .design__subtitule {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    .design__subtitule2 {
+        font-size: 17px;
+        margin-bottom: 2px;
+    }
+
+    .design__text2 {
+        font-size: 12px;
+        width: 96%;
+        margin: 0px 0px;
+        line-height: 1.15;
+    }
+
+    .img__list{
+        width: 40px;
+        height: 40px;
+        margin-left: 5px;
+    }
+
+    .list__text {
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin: 5px 0;
+        line-height: 1.2;
+        width: 95%;
+    }
+
+    .list__subtitle {
+        font-size: 13px;
+        /* letter-spacing: 0.5px; */
+        margin: 0;
+    }
+
+    .subtitle__mision2 {
+        font-size: 26px;
+        letter-spacing: 5px;
+        top: 25%;
+        left: 12%;
+    }
+
+    .text__mision2 {
+        font-size: 17px;
+        letter-spacing: none;
+    }
+
+    .text__mision22 {
+        position: relative;
+        font-size: 50px;
+    }
+
+    .text__mision2 i {
+        color: var(--color-secondary);
+        font-size: 23px;
+        margin-left: 6px;
+    }
+
+
+    .subtitle__mision22 {
+        font-size: 26px;
+        top: 25%;
+        left: 18%;
+    }
+
+
+    .personal-info__option {
+        width: 94%;
+        padding: 1.3rem;
+    }
+
+    .personal-info__title {
+        font-size: 13px;
+    }
+
+    .personal-info__value {
+        font-size: 13px;
+    }
+
+    .personal-info__title i {
+        font-size: 15px;
+    }
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (max-width: 1280px){
+
+    .area1a {
+        grid-area: 1 / 3 / 2 / 14;
+    }
+
+    .area2a {
+        grid-area: 1 / 1 / 3 / 3;
+    }
+
+    .area3a-aboutme {
+        grid-area: 3 / 1 / 14 / 3;
+    }
+
+    .area4a {
+        grid-area: 2 / 3 / 6 / 11;
+    }
+
+    .area5a {
+        grid-area: 6 / 3 / 10 / 11;
+    }
+
+    .area6a {
+        grid-area: 2 / 11 / 10 / 15;
+    }
+
+    .area7a {
+        grid-area: 10 / 3 / 14 / 7;
+    }
+
+    .area8a {
+        grid-area: 10 / 7 / 14 / 11;
+    }
+
+    .area9a {
+        grid-area: 10 / 11 / 14 / 15;
+    }
+
+
+    .personal-info__description {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0; 
+        word-break: break-word;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        line-height: 1.3;
+    }
+
+    .personal-info__titleone {
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 0;
+    }
+
+    .ivangaray {
+        font-size: 17px;
+    }
+
+    .design__text {
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        margin: 10px 0;
+        line-height: 1.4;
+    }
+
+    .design__subtitule {
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        margin-top: 10px;
+    }
+
+    .logo__about {
+        width: 200px;
+        height: 200px;
+    }
+
+    .personal-info__option {
+        padding: 2rem;
+    }
+
+    .personal-info__title {
+        font-size: 16px;
+    }
+
+    .personal-info__value {
+        font-size: 16px;
+    }
+
+    .img__list {
+        width: 30px;
+        height: 30px;
+    }
+
+    .list__do {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        margin-top: 10px;
+    }
+
+    .list__subtitle {
+        font-size: 12px;
+        letter-spacing: 0px;
+        margin: 0;
+    }
+
+    .list__text {
+        font-size: 12.5px;
+        letter-spacing: 0px; 
+        margin: 0; 
+        width: 90%;
+    }
+
+    .subtitle__mision2 {
+        font-size: 28px;
+        top: 30%;
+        left: 15%;
+    }
+
+    .subtitle__mision22 {
+        font-size: 28px;
+        top: 30%;
+        left: 20%;
+    }
+
+    .subtitle__mision222 {
+        font-size: 28px;
+        top: 29%;
+        left: 25%;
+    }
+
+    .text__mision22 {
+        position: relative;
+        font-size: 60px;
+    }
+
+    .text__mision2 {
+        position: relative;
+        font-size: 22px;
+    }
+
+    .text__mision2 i {
+        font-size: 28px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 430px) {
+    .container {
+        width: 98%;
+        height: 99vh;
+        gap: 10px;
+    }
+
+
+.area3a-aboutme {
+    grid-area: 10 / 1 / 14 / 15;
+}
+
+.area5a {
+    grid-area: 6 / 5 / 9 / 15;
+}
+
+.area6a {
+    grid-area: 11 / 1 / 14 / 15;
+    display: none;
+}
+
+.area10a {
+    grid-area: 7 / 1 / 10 / 15;
+}
+
+.about__design2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.design__subtitule2{
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    color: var(--color-text);
+}
+
+.design__text2 {
+    font-size: 10px;
+    width: 95%;
+    margin: 5px;
+    letter-spacing: 0.5;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-align: justify;
+    word-break: break-word;
+    padding-bottom: 10px;
+    line-height: 1.4;
+}
+
+.design__presentation{
+    justify-content: center;
+}
+
+.design__subtitule{
+    font-size: 13px;
+    color: var(--color-text);
+}
+
+.logo__about {
+    display: none;
+}
+
+.img__list {
+    width: 30px;
+    height: 30px;
+}
+
+
+.design__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.abouttodo__list{
+    flex-direction: row;
+}
+
+.list__do {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    margin-top: 8px;
+}
+
+.list__subtitle {
+    font-size: 10px;
+    font-family: "Montserrat";
+    color: var(--color-forty);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+
+.list__text {
+    font-size: 9px;
+    width: 90%;
+    margin-bottom: 2px;
+}
+
+.design__subtitule {
+    font-size: 11px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.area2a{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+.area1a {
+    grid-area: 1 / 3 / 2 / 13;
+}
+
+.area4a {
+    grid-area: 2 / 1 / 5 / 15;
+}
+
+.area5a {
+    grid-area: 5 / 1 / 7 / 15;
+}
+
+.area7a {
+    grid-area: 12 / 5 / 14 / 9;
+    display: none;
+}
+
+.area8a {
+    grid-area: 12 / 9 / 14 / 12;
+    display: none;
+}
+
+.area9a {
+    grid-area: 12 / 12 / 14 / 15;
+    display: none;
+}
+
+
+.personal-info__description {
+    font-size: 10px;
+    width: 95%;
+    font-weight: bolder;
+    letter-spacing: 0.5px;
+    word-break: break-word;
+    line-height: 1.4;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.personal-info__titleone {
+    font-size: 13px;
+    font-family: "Parkinsans";
+    color: var(--color-forty);
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 0;
+}
+
+.ivangaray {
+    color: var(--color-secondary);
+    background-color: var(--color-forty);
+    border-radius: 15px;
+    padding: 1px 8px;
+    font-size: 11px;
+}
+
+
+
+
+.design__text {
+    font-size: 10px;
+    width: 95%;
+    margin: 5px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.personal-info__option {
+    justify-content: space-between;
+    width: 95%;
+    padding: 0.3rem;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.personal-info__data{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.personal-info__title {
+    font-size: 12px;
+}
+
+.personal-info__title i {
+    font-size: 14px;
+}
+
+.personal-info__value {
+    font-size: 12px;
+}
+
+
+}

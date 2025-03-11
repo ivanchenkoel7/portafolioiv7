@@ -1,0 +1,373 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://db.onlinewebfonts.com/c/3980c818f6ac2f0278711008c295bde4?family=Bellfort+Rough+Demo);
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Outline&family=Parkinsans:wght@300..800&family=Poller+One&family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Workbench&display=swap');
+
+
+:root {
+    --color-primary: #4d4d4d;
+    --color-secondary: #ffe600;
+    --color-base: #f0f0f0f0;
+    --color-forty: #000000;
+    --color-five: #C0C0C0;
+    --color-text: #003366;
+    --color-layout: #101010;
+    --color-layout2: #787878;
+}
+
+@font-face{
+font-family: 'ambiguity';
+src: url('./fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+
+
+@media (max-width: 1440px){
+
+
+    .starblog__summary {
+        font-size: 25px;
+        letter-spacing: 8px;
+        margin-top: 12px;
+    }
+
+    .skills__list {
+        width: 30px;
+        height: 30px;
+        gap: 8px;
+        margin-top: 8px;
+        z-index: 9999;
+    }
+
+    .habilidades__dato:nth-child(2) {
+        font-size: 15px;
+    }
+
+    .figure__atras p {
+        font-size: 20px;
+    }
+
+    .figure__atras h5 {
+        font-size: 20px;
+    }
+
+    .skills__list:nth-child(2) {
+        margin-right: 35px;
+    }
+
+    .skills__list:nth-child(3) {
+        margin-right: 50px;
+    }
+
+    .card__cartel {
+        width: 90%;
+        height: 74%;
+        position: absolute;
+        top: 45px;
+        left: 25px;
+    }
+
+    .container__tarjeta {
+        width: 390px;
+        height: 225px;
+    }
+
+    .tarjeta__link {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tarjeta__figure {
+        width: 390px;
+        height: 228px;
+        margin: 0;
+    }
+
+    .proyect__tech {
+        margin-top: 10px;
+    }
+
+    .cartel__aclaracion {
+        margin-top: 5px;
+        letter-spacing: 2px;
+        text-decoration: underline;
+    }
+
+    .cartel__description {
+        font-size: 12px;
+        width: 90%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 1280px){
+
+    .area3a-portfolio {
+        grid-area: 3 / 1 / 14 / 3;
+    }
+
+    .area1p {
+        grid-area: 2 / 3 / 8 / 8;
+    }
+
+    .area2p {
+        grid-area: 2 / 8 / 8 / 13;
+    }
+
+    .area5p {
+        grid-area: 2 / 13 / 8 / 15;
+    }
+
+    .area6p {
+        grid-area: 8 / 3 / 14 / 5;
+    }
+
+    .area4p {
+        grid-area: 8 / 10 / 14 / 15;
+    }
+
+    .area3p {
+        grid-area: 8 / 5 / 14 / 10;
+    }
+
+    .info__destacado {
+        font-size: 11px;
+    }
+
+    .starblog__summary {
+        font-size: 1.8rem;
+        font-family: Bellfort Rough Demo;
+        letter-spacing: 1px;
+    }
+
+    .figure__atras p {
+        font-size: 1.4rem;
+    }
+
+    .figure__atras h5 {
+        font-size: 1.5rem;
+    }
+
+    .card__date {
+        margin-bottom: 30px
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media (max-width: 430px){
+
+    .area1p {
+        grid-area: 2 / 1 / 6 / 8;
+    }
+
+    .area2p {
+        grid-area: 2 / 8 / 6 / 15;
+    }
+
+    .area3p {
+        grid-area: 6 / 1 / 10 / 8;
+    }
+
+    .area4p {
+        grid-area: 6 / 8 / 10 / 15;
+    }
+
+    .area5p {
+        grid-area: 10 / 1 / 14 / 8;
+    }
+
+    .area6p {
+        grid-area: 10 / 8 / 14 / 15;
+    }
+
+    .area3a-portfolio {
+        display: none;
+    
+        
+    }
+
+    .starblog__summary {
+        font-size: 19px;
+        font-family: Bellfort Rough Demo;
+        letter-spacing: 4px;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+
+    .habilidades__dato {
+        font-family: "Montserrat";
+        font-size: 13px;
+        letter-spacing: 1px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .skills__list img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .skills__list2 img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .container__tarjeta {
+        width: 205px;
+        height: 165px;
+    }
+
+    .tarjeta__figure {
+        width: 205px;
+        height: 165px;
+    }
+
+    .figure__atras h5 {
+        font-size: 16px;
+    }
+
+    .figure__atras p {
+        font-size: 16px;
+    }
+
+    .skills__list:nth-child(1) {
+        margin-right: -14px;
+    }
+
+    .skills__list:nth-child(2) {
+        margin-right: 0px;
+    }
+
+    .skills__list:nth-child(3) {
+        margin-right: 10px;
+    }
+
+    .figure__frente, .figure__atras{
+        border-radius: none;
+    }
+
+    .figure__background6{
+        background-size:cover;
+    }
+
+    .card__carteltwo {
+        gap: 1px;
+        margin-top: 0px;
+        width: 190px;
+        height: 130px;
+        top: 50px;
+        left: 5px;
+    }
+
+    .card__date {
+        margin-bottom: 0px;
+        margin-top: 5px;
+    }
+
+    .skills__list {
+        width: 30px;
+        height: 10px;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .habilidades__dato:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .cartel__description {
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .cartel__aclaracion {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    .card__cartel {
+        width: 95%;
+        height: 80%;
+        position: absolute;
+        top: 28px;
+        left: 5px;
+    }
+
+    .skills__list2 {
+        gap: 5px;
+        margin-top: 2px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

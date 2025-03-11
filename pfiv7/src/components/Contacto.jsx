@@ -1,7 +1,9 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
 import FotoChica from './FotoChica';
+import ReCAPTCHA from 'react-google-recaptcha';
 import '../styles/Contacto.css';
+import '../styles/Contacto-responsive.css';
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -12,6 +14,7 @@ const Contacto = () => {
   });
 
   const [status, setStatus] = useState('');
+  const [recaptchaToken, setRecaptchaToken] = useState('');
 
   useEffect(() => {
     setTimeout(() => {
@@ -21,7 +24,7 @@ const Contacto = () => {
     }, 1000);
   }, []);
 
-  const handleChange = (e) => {
+const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -33,13 +36,18 @@ const Contacto = () => {
     e.preventDefault();
     setStatus('Enviando...');
 
+    if (!recaptchaToken) {
+      setStatus('Por favor, completa el reCAPTCHA');
+      return;
+    }
+
     try {
-      const response = await fetch('https://blogpelis-back.onrender.com/api/contacto/', {
+      const response = await fetch('http://ivanchenkoel7.dev/api/contacto/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify({ ...formData, recaptchaToken })
       });
 
       if (response.ok) {
@@ -50,6 +58,7 @@ const Contacto = () => {
           subject: '',
           message: ''
         });
+        setRecaptchaToken('');
       } else {
         setStatus('Error al enviar el mensaje');
       }
@@ -57,6 +66,10 @@ const Contacto = () => {
     } catch (error) {
       setStatus('Error al enviar el mensaje');
     }
+  };
+
+  const handleRecaptchaChange = (token) => {
+    setRecaptchaToken(token);
   };
 
   return (
@@ -67,13 +80,12 @@ const Contacto = () => {
         </div>
       </div>
       <FotoChica />
-      <div className="area area3a">
+      <div className="area area3a-contacto">
         <div className="container__info">
           <h2 className="info__title">Contactame</h2>
           <h3 className="info__destacado">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum velit ipsum sunt, ut quod minima
-            maiores praesentium, eligendi error, asperiores ex! Quis temporibus quod dolorem, beatae quidem
-            facilis sit mollitia.
+          Si deseas contactarme, puedes hacerlo a través del siguiente formulario. También te comparto otros datos sobre mí para que los tengas en cuenta.
+          Gracias por visitar mi sitio web.
           </h3>
         </div>
       </div>
@@ -136,9 +148,13 @@ const Contacto = () => {
                 </div>
               </section>
             </div>
+            <ReCAPTCHA
+              sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+              onChange={handleRecaptchaChange}
+            />
             <input type="submit" className="form__button" value="Enviar Mensaje" />
           </form>
-          {status && <p>{status}</p>}
+          {status && <p className="status__message">{status}</p>}
         </section>
       </div>
       <div className="area area2co">
@@ -148,30 +164,30 @@ const Contacto = () => {
       </div>
       <div className="area area3co">
         <div className="contact__data">
-          <img width="72" height="72" src="https://img.icons8.com/color/72/filled-message.png" alt="filled-message" />
+          <img width="72" height="72" src="https://img.icons8.com/color/72/filled-message.png" alt="filled-message" className='contact__data-img'  />
           <h2 className="contact__subtitle">ivanchenkoel7@gmail.com</h2>
         </div>
       </div>
       <div className="area area4co">
         <div className="contact__data">
-          <img width="72" height="72" src="https://img.icons8.com/emoji/72/check-mark-button-emoji.png" alt="check-mark-button-emoji" />
+          <img width="72" height="72" src="https://img.icons8.com/emoji/72/check-mark-button-emoji.png" alt="check-mark-button-emoji" className='contact__data-img'  />
           <h2 className="contact__subtitle">Desarrollador Freelance</h2>
         </div>
       </div>
       <div className="area area5co">
         <div className="img__contacto">
-          <img src="/src/assets/iv7ico.png" alt="" className="logo__about" />
+          <img src="/src/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
         </div>
       </div>
       <div className="area area6co">
         <div className="contact__data">
-          <img width="72" height="72" src="https://img.icons8.com/color/72/whatsapp--v1.png" alt="whatsapp--v1" />
+          <img width="72" height="72" src="https://img.icons8.com/color/72/whatsapp--v1.png" alt="whatsapp--v1" className='contact__data-img' />
           <h2 className="contact__subtitle">+598 95604814</h2>
         </div>
       </div>
       <div className="area area7co">
         <div className="contact__data">
-          <img width="64" height="64" src="https://img.icons8.com/arcade/64/marker.png" alt="marker" />
+          <img width="64" height="64" src="https://img.icons8.com/arcade/64/marker.png" alt="marker" className='contact__data-img'  />
           <h2 className="contact__subtitle">Playa Hermosa, Uruguay</h2>
         </div>
       </div>

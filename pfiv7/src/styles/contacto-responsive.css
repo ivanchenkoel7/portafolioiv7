@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://db.onlinewebfonts.com/c/3980c818f6ac2f0278711008c295bde4?family=Bellfort+Rough+Demo);
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Outline&family=Parkinsans:wght@300..800&family=Poller+One&family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Workbench&display=swap');
+
+
+:root {
+    --color-primary: #4d4d4d;
+    --color-secondary: #ffe600;
+    --color-base: #f0f0f0f0;
+    --color-forty: #000000;
+    --color-five: #C0C0C0;
+    --color-text: #003366;
+    --color-layout: #101010;
+    --color-layout2: #787878;
+}
+
+@font-face{
+    font-family: 'ambiguity';
+    src: url('./fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media (max-width: 1440px){
+
+    .contact__subtitle {
+        font-size: 15px;
+        margin-top: 4px;
+        letter-spacing: 0;
+    }
+
+    .contact__data-img{
+        width: 60px;
+        height: 60px;
+        margin-top: 10px;
+    }
+
+
+    .contacto__title {
+        font-size: 17px;
+        letter-spacing: 0px;
+        margin-top: 7px;
+        margin-bottom: 16px;
+    }
+
+    .form__input {
+        width: 75%;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 1rem;
+        padding-right: 2rem;;
+        font-size: 15px;
+        line-height: 1rem;
+    }
+
+    .form__input--textarea {
+        height: 70%;
+    }
+
+    .form__group {
+        margin-bottom: 1rem;
+    }
+
+    .form__button {
+        padding: 9px 9px;
+        font-size: 12px;
+        position: absolute;
+        top: 225px;
+        left: 43%;
+    }
+
+
+    .modal__button{
+        left: 60%;
+        top: 230px;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+@media (max-width: 1280px){
+
+    .area3a-contacto {
+        grid-area: 3 / 1 / 9 / 3;
+    }
+
+    .area1co {
+        grid-area: 2 / 3 / 9 / 9;
+    }
+
+    .area2co {
+        grid-area: 9 / 1 / 14 / 12;
+    }
+
+    .area4co {
+        grid-area: 2 / 12 / 6 / 15;
+    }
+
+    .area6co {
+        grid-area: 6 / 12 / 9 / 15;
+    }
+
+    .area7co {
+        grid-area: 6 / 9 / 9 / 12;
+    }
+
+    .area5co {
+        grid-area: 9 / 12 / 14 / 15;
+    }
+
+    .contact__subtitle {
+        font-size: 15px;
+        letter-spacing: 0;
+    }
+
+    .contact__data img {
+        width: 65px;
+        height: 65px;
+        margin-top: 10px;
+    }
+
+    .form__input {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        padding-left: 1rem;
+        padding-right: 2rem;
+        font-size: 18px;
+        line-height: 1.2rem;
+    }
+
+    .contacto__title {
+        font-size: 1.2rem;
+    }
+
+    .form__button {
+        padding: 10px 10px;
+        margin-left: 30px;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 430px) {
+
+    .area3a-contacto {
+        grid-area: 2 / 1 / 4 / 15;
+    }
+
+    .area1co {
+        grid-area: 4 / 1 / 9 / 15;
+    }
+
+    .area2co {
+        grid-area: 11 / 1 / 14 / 15;
+    }
+
+
+    .area3co {
+        grid-area: 9 / 11 / 11 / 15;
+    }
+
+    .area4co {
+        grid-area: 11 / 1 / 9 / 5;
+    }
+
+    .area5co {
+        display: none;
+    }
+
+    .area6co {
+        grid-area: 9 / 5 / 11 / 8;
+    }
+
+    .area7co {
+        grid-area: 9 / 8 / 11 / 11;
+    }
+
+
+    .form__input {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 1.2rem;
+        padding-right: 1.5rem;
+        border: 2px solid var(--color-text);
+        border-radius: 15px;
+        background-color: var(--color-base);
+        outline: none;
+        box-shadow: 0 1rem 1rem -0.5rem rgba(0, 0, 0, 0.25);
+        color: var(--color-text);
+        font-size: 12px;
+        line-height: 1rem;
+    }
+
+    .form__group--textarea{
+        padding: 0px 0px 0px 0px;
+        width: 160px;
+        height: 90px;
+    }
+
+    .form__group {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .contacto__title {
+        font-size: 1rem;
+        letter-spacing: 2px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        margin-left: 30px;
+        display: none;
+    }
+
+    .form__button {
+        padding: 7px 7px;
+        /* margin-left: 15px; */
+        font-size: 11px;
+        position: absolute;
+        top: 255px;
+        left: 230px;
+    }
+
+    .contact__form-box {
+        flex-basis: 65%;
+        /* padding: 0 2rem; */
+        margin-top: 10px;
+    }
+
+    .form__input:focus~label,
+.form__input:not(:placeholder-shown)~label{
+    top: -17px;
+    left: 0rem;
+    font-size: 12px;
+    color: var(--color-forty);
+}
+
+.contact__data img{
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+
+.contact__subtitle {
+    font-size: 9px;
+    margin-top: 8px;
+    letter-spacing: 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.info__destacado {
+    font-size: 10px;
+}
+
+}
+
+
+@media (max-width: 415px){
+
+    .contact__subtitle {
+        font-size: 8px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

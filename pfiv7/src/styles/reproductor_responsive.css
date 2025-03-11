@@ -1,0 +1,50 @@
+
+@media (max-width: 430px){
+    
+    .area1rep {
+        grid-area: 1 / 1 / 2 / 15;
+    }
+
+    .reproductor {
+        grid-area: 3 / 1 / 7 / 15;
+    }
+
+    .reproductor__controls {
+        display: flex;
+        width: 98%;
+        height: 30px;
+        background-color: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        gap: 5px;
+        position: relative;
+        top: -15px;
+        left: 0px;
+    }
+
+    .button__play {
+        background-color: var(--color-forty);
+        color: var(--color-base);
+        border: none;
+        border-radius: 15px;
+        padding: 5px 13px;
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    .seek__bar{
+        width: 40px;
+    }
+
+    .volume__bar{
+        width: 40px;
+    }
+
+    .area3arre {
+        grid-area: 8 / 1 / 12 / 15;
+    }
+
+    .reproductor__time {
+        font-size: 13px;
+    }
+
+}

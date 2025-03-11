@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(https://use.fontawesome.com/releases/v6.4.2/css/all.css);
+@import url(https://db.onlinewebfonts.com/c/3980c818f6ac2f0278711008c295bde4?family=Bellfort+Rough+Demo);
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Poller+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Jaro:opsz@6..72&family=Londrina+Outline&family=Parkinsans:wght@300..800&family=Poller+One&family=Rubik+Mono+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Workbench&display=swap');
+
+
+:root {
+    --color-primary: #4d4d4d;
+    --color-secondary: #ffe600;
+    --color-base: #f0f0f0f0;
+    --color-forty: #000000;
+    --color-five: #C0C0C0;
+    --color-text: #003366;
+    --color-layout: #101010;
+    --color-layout2: #787878;
+}
+
+@font-face{
+    font-family: 'ambiguity';
+    src: url('./fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (max-width: 1440px){
+
+
+
+    .frase__inspiradora {
+        font-size: 12px;
+    }
+
+    .autor__name {
+        font-size: 12px;
+    }
+
+    .review-text {
+            margin-left: 17px;
+            font-size: 11px;
+            font-family: 'Parkinsans', sans-serif;
+            color: var(--color-primary);
+            font-weight: 600;
+            width: 95%;
+            margin-top: 5px;
+            margin-bottom: 5px;
+    }
+
+    .connect-button {
+        padding: 6px 6px;
+        font-size: 11px;
+    }
+
+    .card {
+        width: 490px;
+        height: 185px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .user-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .user-name {
+        margin: 0;
+        font-size: 17px;
+    }
+
+    .user-info {
+        margin-left: 15px;
+        margin-top: 0px;
+    }
+
+    .user-title, .user-location {
+        margin: 2px 0;
+        font-size: 10px;
+    }
+
+    .star {
+        font-size: 15px;
+    }
+
+    .review-date {
+        font-size: 13px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (max-width: 1280px){
+    .area3a-reseñas {
+        grid-area: 3 / 1 / 14 / 3;
+    }
+
+    .area1r {
+        grid-area: 2 / 3 / 7 / 9;
+    }
+
+    .area2r {
+        grid-area: 2 / 9 / 7 / 15;
+    }
+
+    .area4r {
+        grid-area: 7 / 9 / 12 / 15;
+    }
+
+    .area3r {
+        grid-area: 7 / 3 / 12 / 9;
+    }
+
+    .area5r {
+        grid-area: 12 / 3 / 14 / 6;
+    }
+
+    .area6r {
+        grid-area: 12 / 6 / 14 / 11;
+    }
+
+    .area7r {
+        grid-area: 12 / 11 / 14 / 15;
+    }
+
+    .user-name {
+        margin: 0;
+        font-size: 20px;
+    }
+
+    .user-title, .user-location {
+        margin: 2px 0;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .review-text {
+        margin-left: 12px;
+        font-size: 13.5px;
+    }
+
+    .user-image {
+        width: 90px;
+        height: 90px;
+    }
+
+    .stars {
+        margin-left: 20px;
+    }
+
+    .star {
+        font-size: 21px;
+    }
+
+    .connect-button {
+        padding: 5px 10px;
+    }
+
+    .frase__inspiradora {
+        font-size: 14px;
+    }
+
+
+    
+
+
+
+
+
+
+}
+
+
+@media (max-width: 430px) {
+
+    .area3a-reseñas {
+        display: none;
+    }
+
+    .area7r {
+        display: none;
+    }
+
+    .area6r {
+        display: none;
+    }
+
+    .area5r {
+        display: none;
+    }
+
+    .area4r {
+        grid-area: 11 / 1 / 14 / 15;
+    }
+
+    .area3r {
+        grid-area: 8 / 1 / 11 / 15;
+    }
+
+    .area2r {
+        grid-area: 5 / 1 / 8 / 15;
+    }
+
+    .area1r {
+        grid-area: 2 / 1 / 5 / 15;
+    }
+
+    .card {
+        width: 415px;
+        height: 145px;
+        border-radius: 0;
+    }
+
+
+    .user-info{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+    }
+
+    .user-image {
+        width: 60px;
+        height: 60px;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+
+    .user-name {
+        margin: 0px 0;
+        font-size: 15px;
+    }
+
+    .user-title, .user-location {
+        margin: 0px 0;
+        font-size: 10px;
+    }
+
+    .star {
+        font-size: 15px;
+    }
+
+    .stars {
+        margin-left: 5px;
+    }
+
+    .review-text {
+        font-size: 10px;
+        font-family: 'Parkinsans', sans-serif;
+        color: var(--color-primary);
+        font-weight: 400;
+        width: 79%;
+        position: relative;
+        top: -34px;
+        left: 80px;
+        margin: 0;
+    }
+
+    .connect-button {
+        padding: 5px 5px;
+        font-size: 10px;
+        position: relative;
+        top: -75px;
+        left: 225px;
+    }
+
+    .foot__card {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        height: 20px;
+    }
+
+    .review{
+        height: 20px;
+    }
+
+    .review-date {
+        font-size: 12px;
+        position: relative;
+        top: 10px;
+        left: 46px;
+        margin: 0;
+    }
+
+
+    @media (max-width: 415px){
+
+        .connect-button {
+            padding: 5px 5px;
+            font-size: 10px;
+            position: relative;
+            top: 28px;
+            left: -47px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

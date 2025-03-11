@@ -17,6 +17,12 @@
     --color-layout2: #787878;
 }
 
+@font-face{
+    font-family: 'ambiguity';
+    src: url('./fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .area1a {
     grid-area: 1 / 4 / 2 / 14;
@@ -47,11 +53,11 @@
 }
 
 
-.area3a {
+.area3a-aboutme {
     grid-area: 6 / 1 / 14 / 4;
     /*background: linear-gradient(0deg, #ffffff, #f0f0f0, #e0e0e0, #d0d0d0, #c0c0c0);*/
     background: #ffe600;
-    background: linear-gradient(0deg, rgba(255,230,0,1) 0%, rgba(255,255,102,1) 66%, rgba(255,255,204,1) 100%);
+    background: linear-gradient(0deg, #ffe600 0%, #ffff66 66%, #ffffcc 100%);
     display: flex;
     flex-direction: column;
 
@@ -60,15 +66,15 @@
 
 .area4a {
     grid-area: 2 / 4 / 6 / 11;
-    background-image: url(assets/backgris.jpg);
+    background-image: url(assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .area5a {
-    grid-area: 6 / 4 / 10 / 11;
-    background-image: url(assets/backgris.jpg);
+    grid-area: 6 / 4 / 10 / 7;
+    background-image: url(assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,7 +82,7 @@
 
 .area6a {
     grid-area: 2 / 11 / 10 / 14;
-    background: var(--color-layout2);
+    background-image: url(assets/perfilfrente.webp);
 }
 
 .area7a {
@@ -85,13 +91,21 @@
 }
 
 .area8a {
-    grid-area: 10 / 7 / 14 / 11;
+    grid-area: 10 / 11 / 14 / 14;
     background: var(--color-layout);
 }
 
 .area9a {
     grid-area: 10 / 11 / 14 / 14;
     background: var(--color-layout);
+}
+
+.area10a{
+    grid-area: 6 / 7 / 14 / 11;
+    background-image: url(assets\backgris.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -111,6 +125,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    backdrop-filter: blur(10px);
     
 }
 
@@ -120,7 +135,7 @@
     justify-content: space-between;
     align-items: flex-start;
     width: 90%;
-    padding: 2.5rem;
+    padding: 2rem;
 
 }
 
@@ -135,7 +150,7 @@
 
 .personal-info__title i{
     font-size: 20px;
-    color: var(--color-base);
+    color: var(--color-text);
     font-weight: bolder;
     margin-right: 10px;
 }
@@ -151,6 +166,7 @@
     background: #ffe600;
     background: linear-gradient(0deg, rgba(255,230,0,1) 0%, rgba(255,255,102,1) 66%, rgba(255,255,204,1) 100%);
     transition: background-color 0.3s ease;
+    border-radius: 15px;
 }
 
 .personal-info__option:hover .personal-info__title i {
@@ -193,30 +209,34 @@
     width: 90%;
     font-weight: 700;
     letter-spacing: 0.5px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .ivangaray{
-    color: var(--color-text);
-    font-size: 25px;
-    font-family: "Parkinsans";
+    color: var(--color-secondary);
+    background-color: var(--color-forty);
+    border-radius: 15px;
+    padding: 3px 8px;
+    font-size: 20px;
+    font-family: "ambiguity";
     font-weight: bolder;
     
     
 }
 
 .personal-info__description{
-    font-size: 21px;
+    font-size: 19px;
     font-family: "Montserrat";
     color: var(--color-layout);
-    text-align: justify;
+    text-align: center;
     text-transform: none;
     width: 90%;
     font-weight: 500;
     letter-spacing: 0.5px;
     word-break: break-word;
-    margin: 20px 0;
-    line-height: 1.6; 
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.2;
 }
 
 /*fin header*/
@@ -246,14 +266,22 @@
     height: 100%;
 }
 
+.design__presentation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
 .design__subtitule{
-    font-size: 24px;
+    font-size: 22px;
     font-family: "Parkinsans";
     color: var(--color-forty);
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    letter-spacing: 0.5px;
     margin-top: 10px;
 }
 
@@ -263,23 +291,22 @@
 
 
 .design__text{
-    font-size: 21px;
+    font-size: 18px;
     font-family: "Montserrat";
     color: var(--color-layout);
     text-align: justify;
     text-transform: none;
     width: 90%;
     font-weight: 500;
-    letter-spacing: 0.5px;
     word-break: break-word;
-    margin: 20px 0;
-    line-height: 1.
+    margin: 10px 0px;
+    line-height: 1;
 }
 
 
 .logo__about{
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 150px;
 }
 
 .logo__about:hover{
@@ -321,7 +348,7 @@
 
 .subtitle__mision2 {
     font-size: 32px;
-    font-family: "Monserrat";
+    font-family: "Parkinsans";
     color: var(--color-secondary);
     text-shadow: 2px 2px 2px var(--color-text);
     text-transform: uppercase;
@@ -334,20 +361,20 @@
 
 .subtitle__mision22 {
     font-size: 32px;
-    font-family: "Monserrat";
+    font-family: "Parkinsans";
     color: var(--color-secondary);
     text-shadow: 2px 2px 2px var(--color-text);
     text-transform: uppercase;
     letter-spacing: 5px;
     position: absolute;
     top: 30%;
-    left: 29%;
+    left: 23%;
     transition: all 0.1s ease-in-out;
 }
 
 .subtitle__mision222 {
     font-size: 32px;
-    font-family: "Monserrat";
+    font-family: "Parkinsans";
     color: var(--color-secondary);
     text-shadow: 2px 2px 2px var(--color-text);
     text-transform: uppercase;
@@ -394,7 +421,7 @@
 
 .text__mision22{
     position: relative;
-    font-size: 90px;
+    font-size: 70px;
     font-family: "parkinsans";
     text-transform: capitalize;
     text-align: center;
@@ -599,11 +626,44 @@
     font-weight: 700;
     letter-spacing: 0.5px;
     margin: 5px 0;
-    line-height: 1.6;
-    word-break: break-all;
+    line-height: 1.2;
+    word-break: break-word;
     width: 90%;
 }
 
 .list__img{
     margin-left: 5px;
+}
+
+
+.about__design2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.design__subtitule2{
+    font-size: 22px;
+    font-family: "Parkinsans";
+    color: var(--color-forty);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.design__text2 {
+    font-size: 18px;
+    font-family: "Montserrat";
+    color: var(--color-layout);
+    text-align: justify;
+    text-transform: none;
+    width: 90%;
+    font-weight: 500;
+    word-break: break-word;
+    margin: 10px 0px;
+    line-height: 1.1;
 }
