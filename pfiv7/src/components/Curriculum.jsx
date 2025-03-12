@@ -139,7 +139,7 @@ const Curriculum = () => {
               Se completó con éxito el curso en Coderhouse. La duración fue de 52 horas a lo largo de 13 semanas. Se cumplió satisfactoriamente con todos los requisitos académicos exigidos.
             </p>
             <div className="timeline_certificate">
-              <img src="/public/assets/coderhouse.webp" alt="Certificado Coderhouse" className="certificate__img zoom" onClick={() => handleZoom('/public/assets/coderhouse.jpg')} />
+              <img src="/assets/coderhouse.webp" alt="Certificado Coderhouse" className="certificate__img zoom" onClick={() => handleZoom('/assets/coderhouse.jpg')} />
             </div>
           </div>
         </article>
@@ -156,7 +156,7 @@ const Curriculum = () => {
               Se realizó y completó con éxito el curso en Udemy. La duración fue de 30.5 horas. El estudio recorrió algunas de las tecnologías más usadas como Django, Flask y Tkinter. Se cumplió satisfactoriamente con todos los requisitos académicos exigidos.
             </p>
             <div className="timeline_certificate">
-              <img src="/public/assets/masterenpython.webp" alt="Certificado Udemy Python" className="certificate__img zoom" onClick={() => handleZoom('/public/assets/udemypython.jpg')} />
+              <img src="/assets/masterenpython.webp" alt="Certificado Udemy Python" className="certificate__img zoom" onClick={() => handleZoom('/assets/udemypython.jpg')} />
             </div>
           </div>
         </article>
@@ -173,7 +173,7 @@ const Curriculum = () => {
               Se completó con éxito el curso en Udemy. La duración fue de 4 horas de video. Se cumplió satisfactoriamente con todos los requisitos académicos exigidos.
             </p>
             <div className="timeline_certificate">
-              <img src="/public/assets/html.webp" alt="Certificado HTML y CSS" className="certificate__img zoom" onClick={() => handleZoom('/public/assets/html.jpg')} />
+              <img src="/assets/html.webp" alt="Certificado HTML y CSS" className="certificate__img zoom" onClick={() => handleZoom('/assets/html.jpg')} />
             </div>
           </div>
         </article>
@@ -190,7 +190,7 @@ const Curriculum = () => {
               Se realizó y completó con éxito el curso en Udemy. La duración fue de 19.5 horas de video. Se cumplió satisfactoriamente con todos los requisitos académicos exigidos.
             </p>
             <div className="timeline_certificate">
-              <img src="/public/assets/python_ecommerce.webp" alt="Certificado Ecommerce" className="certificate__img zoom" onClick={() => handleZoom('/public/assets/python_ecommerce.jpg')} />
+              <img src="/assets/python_ecommerce.webp" alt="Certificado Ecommerce" className="certificate__img zoom" onClick={() => handleZoom('/assets/python_ecommerce.jpg')} />
             </div>
           </div>
         </article>
@@ -284,7 +284,7 @@ const Curriculum = () => {
       <div className="area area7c">
         <div className="skill__cont">
           <h3 className="soft__name">CSS</h3>
-          <img width="69" height="69" src="/public/assets/purple-css-logo.webp" alt="github_copilot_chat" />
+          <img width="69" height="69" src="/assets/purple-css-logo.webp" alt="github_copilot_chat" />
         </div>
         <div className="skill__cont2">
           <h3 className="soft__name2">HTML</h3>
@@ -328,7 +328,7 @@ const Curriculum = () => {
         </div>
         <div className="skill__cont12">
           <h3 className="soft__name12">Copilot</h3>
-          <img width="72" height="72" src="/public/assets/chast2_1.webp" alt="github_copilot_chat" />
+          <img width="72" height="72" src="/assets/chast2_1.webp" alt="github_copilot_chat" />
         </div>
       </div>
 

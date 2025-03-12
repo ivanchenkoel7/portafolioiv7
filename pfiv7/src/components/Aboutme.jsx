@@ -82,7 +82,7 @@ const Aboutme = () => {
         <div className="design__container">
           <div className="about__design">
             <div className="design__presentation">
-            <img src="/public/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
+            <img src="/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
               <h2 className="design__subtitule">Mi Marca Personal</h2>
             </div>
               <p className="design__text">

@@ -20,7 +20,7 @@
 
 .area1r{
     grid-area: 2 / 4 / 7 / 9;
-    background-image: url(/public/assets/backgris.webp);
+    background-image: url(/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@
 
 .area2r{
     grid-area: 2 / 9 / 7 / 14;
-    background-image: url(/public/assets/backgris.webp);
+    background-image: url(/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,7 +38,7 @@
 
 .area3r{
     grid-area: 7 / 4 / 12 / 9;
-    background-image: url(/public/assets/backgris.webp);
+    background-image: url(/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 
 .area4r{
     grid-area: 7 / 9 / 12 / 14;
-    background-image: url(/public/assets/backgris.webp);
+    background-image: url(/assets/backgris.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,7 +54,7 @@
 
 .area5r{
     grid-area: 12 / 4 / 14 / 7;
-    background-image: url(/public/assets/negro_textura.webp);
+    background-image: url(/assets/negro_textura.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,7 +63,7 @@
 
 .area6r{
     grid-area: 12 / 7 / 14 / 11;
-    background-image: url(/public/assets/negro_textura.webp);
+    background-image: url(/assets/negro_textura.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 
 .area7r{
     grid-area: 12 / 11 / 14 / 14;
-    background-image: url(/public/assets/negro_textura.webp);
+    background-image: url(/assets/negro_textura.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

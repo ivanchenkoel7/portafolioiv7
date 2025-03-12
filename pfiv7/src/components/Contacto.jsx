@@ -176,7 +176,7 @@ const handleChange = (e) => {
       </div>
       <div className="area area5co">
         <div className="img__contacto">
-          <img src="/public/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
+          <img src="/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
         </div>
       </div>
       <div className="area area6co">
