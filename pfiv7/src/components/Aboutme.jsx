@@ -3,6 +3,7 @@ import React from 'react'
 import "../styles/aboutme.css";
 import FotoChica from './FotoChica';
 import '../styles/aboutme_responsive.css';
+import logopequeño from '../assets/logoiv7_pequeño.webp';
 
 const Aboutme = () => {
   return (
@@ -82,7 +83,7 @@ const Aboutme = () => {
         <div className="design__container">
           <div className="about__design">
             <div className="design__presentation">
-            <img src="/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
+            <img src={logopequeño} alt="" className="logo__about" />
               <h2 className="design__subtitule">Mi Marca Personal</h2>
             </div>
               <p className="design__text">

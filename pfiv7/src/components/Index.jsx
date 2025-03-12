@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import ModalContact from './ModalContact';
-
+import perfilcostado from '../assets/perfilcostadofinal.webp';
 
 const Index = () => {
   const [showModal, setShowModal] = useState(false);
@@ -15,7 +15,7 @@ const Index = () => {
       </div>
       <div className="area area2">
         <div className="img__grid">
-          <img src="/assets/perfilcostadofinal.webp" alt="Perfil de Ivan Garay Web developer, Django and Python developer" className="img__photo" />
+        <img src={perfilcostado} alt="Perfil de Ivan Garay Web developer, Django and Python developer" className="img__photo" />
         </div>
       </div>
       <div className="area area10">

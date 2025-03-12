@@ -4,6 +4,7 @@ import FotoChica from './FotoChica';
 import ReCAPTCHA from 'react-google-recaptcha';
 import '../styles/Contacto.css';
 import '../styles/Contacto-responsive.css';
+import logopequeño from '../assets/logoiv7_pequeño.webp';
 
 const Contacto = () => {
   const [formData, setFormData] = useState({
@@ -176,7 +177,7 @@ const handleChange = (e) => {
       </div>
       <div className="area area5co">
         <div className="img__contacto">
-          <img src="/assets/logoiv7_pequeño.webp" alt="" className="logo__about" />
+          <img src={logopequeño} alt="" className="logo__about" />
         </div>
       </div>
       <div className="area area6co">

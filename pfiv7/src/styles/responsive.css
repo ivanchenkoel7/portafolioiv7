@@ -818,7 +818,7 @@ font-style: normal;
     }
     
     .icons__link {
-        padding: 5px 5px;
+        padding: 0px 10px;
     }
 
 
@@ -865,7 +865,7 @@ font-style: normal;
         transform: none; 
         box-shadow: none; 
         background: var(--color-base); 
-        padding: 10px 10px; 
+        padding: 5px 10px; 
         border-radius: 15px;
     }
     
@@ -971,7 +971,7 @@ font-style: normal;
 
 .icon__icons button {
     border: none;
-    padding: 5px 5px;
+    padding: 1px 10px;
 }
 
 
@@ -1026,7 +1026,7 @@ font-style: normal;
     }
 
     .icon__list {
-        gap: 5rem;
+        gap: 4rem;
     }
 
     .redes__inicio {
@@ -1054,4 +1054,9 @@ font-style: normal;
         height: 100%;
         width: 15px;
     }
+
+    .text__inicio {
+        font-size: 12px;
+    }
+
 }

@@ -3,6 +3,11 @@ import React from 'react';
 import FotoChica from './FotoChica';
 import '../styles/reseñas.css';
 import '../styles/reseñas_responsive.css';
+import eliana from '../assets/eliana.webp';
+import freddy from '../assets/freddy.webp';
+import ukito from '../assets/ukito.webp';
+import dario from '../assets/dario.webp';
+
 
 
 
@@ -34,7 +39,7 @@ const Reseñas = () => {
       <div className="area area1r">
         <div className="card">
           <div className="user-info">
-            <img src="/assets/eliana.webp" alt="Eliana Scotti Aixa Energia" className="user-image" />
+            <img src={eliana} alt="Eliana Scotti Aixa Energia" className="user-image" />
             <div className='user-info__container'>
               <h2 className="user-name">Eliana Scotti</h2>
               <p className="user-title">Ingeniera, CEO Aixa Energía</p>
@@ -64,7 +69,7 @@ const Reseñas = () => {
       <div className="area area2r">
         <div className="card">
           <div className="user-info">
-            <img src="/assets/freddy.webp" alt="Personalizados.uy el mejor lugar para tus ideas de diseño e impresion" className="user-image" />
+            <img src={freddy} alt="Personalizados.uy el mejor lugar para tus ideas de diseño e impresion" className="user-image" />
             <div>
               <h2 className="user-name">Freddy Barreiro</h2>
               <p className="user-title">CEO en Personalizados.uy</p>
@@ -95,7 +100,7 @@ const Reseñas = () => {
       <div className="area area3r">
                 <div className="card">
                     <div className="user-info">
-                        <img src="/assets/ukito.webp" alt="Imagen de Usuario" className="user-image" />
+                        <img src={ukito} alt="Imagen de Usuario" className="user-image" />
                         <div>
                             <h2 className="user-name">Gabriel Meruvia</h2>
                             <p className="user-title">Support Specialist | Thomson Reuters</p>
@@ -125,7 +130,7 @@ const Reseñas = () => {
             <div className="area area4r">
                 <div className="card">
                     <div className="user-info">
-                        <img src="/assets/dario.webp" alt="Imagen de Usuario" className="user-image" />
+                        <img src={dario} alt="Imagen de Usuario" className="user-image" />
                         <div>
                             <h2 className="user-name">Dario Ivan Castelli</h2>
                             <p className="user-title">Data Visualization/ Designer</p>

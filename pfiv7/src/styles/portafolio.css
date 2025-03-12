@@ -56,30 +56,6 @@
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*aca comiendan los estilois del portfolio fuera de las areas*/
 
 
@@ -226,7 +202,7 @@
 }
 
 .figure__background {
-    background-image: url('/assets/aixa_landing_1.webp');
+    background-image: url('../assets/aixa_landing_1.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -270,7 +246,7 @@
 }
 
 .figure__background2 {
-    background-image: url('/assets/aixa_ecome.webp');
+    background-image: url('../assets/aixa_ecome.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -280,7 +256,7 @@
 
 
 .figure__background3{
-    background-image: url('/assets/aixa_gestion.webp');
+    background-image: url('../assets/aixa_gestion.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -289,7 +265,7 @@
 }
 
 .figure__background4{
-    background-image: url('/assets/Starblog.webp');
+    background-image: url('../assets/Starblog.webp');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -298,7 +274,7 @@
 }
 
 .figure__background5{
-    background-image: url('/assets/cambio_logo.webp');
+    background-image: url('../assets/cambio_logo.webp');
     background-size:contain; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -307,7 +283,7 @@
 }
 
 .figure__background6{
-    background-image: url('/assets/iv7-logoverde.webp');
+    background-image: url('../assets/iv7-logoverde.webp');
     background-size:contain; 
     background-position: center; 
     background-repeat: no-repeat; 
