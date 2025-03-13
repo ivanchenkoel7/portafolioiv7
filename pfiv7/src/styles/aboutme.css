@@ -18,10 +18,6 @@
 }
 
 
-:root{
-    --back-gris: var(--back-gris);
-
-}
 
 .area1a {
     grid-area: 1 / 4 / 2 / 14;
@@ -78,7 +74,7 @@
 .area6a {
     grid-area: 2 / 11 / 10 / 14;
     background: rgb(211,211,211);
-    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgb(182, 181, 181) 52%, rgb(156, 156, 156) 100%);
 }
 
 .area7a {

@@ -1057,7 +1057,7 @@ color: var(--color-secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(../assets/frontend_developer.webp);
+    background-image: url('/src/assets/frontend_developer.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -1162,7 +1162,7 @@ color: var(--color-secondary);
 
 .area3cu {
     grid-area: 4 / 12 / 9 / 14;
-    background-image: url(../assets/backend_developer.webp);
+    background-image: url('/src/assets/backend_developer.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

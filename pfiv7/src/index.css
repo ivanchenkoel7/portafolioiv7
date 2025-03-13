@@ -17,9 +17,9 @@
     --color-layout2: #787878;
 }
 
-@font-face{
-  font-family: 'ambiguity';
-  src: url(../fonts/FontsFree-Net-Ambiguity4.ttf) format('truetype');
+@font-face {
+  font-family: 'Ambiguity';
+  src: url('./fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
