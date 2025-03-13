@@ -17,6 +17,13 @@
     --color-layout2: #787878;
 }
 
+:root{
+    --back-gris: url('../assets/backgris.webp');
+    --negro-textura: url('../assets/negro_textura.webp');
+    --backend: url('../assets/backend_developer.webp');
+    --frontend: url('../assets/frontend_developer.webp')
+}
+
 
 /* General */
 
@@ -54,7 +61,7 @@
 
 .area4c{
     grid-area: 2 / 4 / 14 / 7;
-    background-image: url('../assets/backgris.webp');
+    background-image: var(--back-gris);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -69,7 +76,7 @@
 
 .area5c{
     grid-area: 2 / 7 / 14 / 10;
-    background-image: url('../assets/backgris.webp');
+    background-image: var(--back-gris);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,25 +107,6 @@
     flex-wrap: wrap;
     gap: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1078,7 +1066,7 @@ color: var(--color-secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('../assets/frontend_developer.webp');
+    background-image: var(--frontend);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -1183,7 +1171,7 @@ color: var(--color-secondary);
 
 .area3cu {
     grid-area: 4 / 12 / 9 / 14;
-    background-image: url('../assets/backend_developer.webp');
+    background-image: var(--backend);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

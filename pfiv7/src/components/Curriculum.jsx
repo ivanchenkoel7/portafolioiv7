@@ -146,7 +146,7 @@ const Curriculum = () => {
               Se completó con éxito el curso en Coderhouse. La duración fue de 52 horas a lo largo de 13 semanas. Se cumplió satisfactoriamente con todos los requisitos académicos exigidos.
             </p>
             <div className="timeline_certificate">
-              <img src={coderhouse} alt="Certificado Coderhouse" className="certificate__img zoom" onClick={() => handleZoom('/assets/coderhouse.jpg')} />
+              <img src={coderhouse} alt="Certificado Coderhouse" className="certificate__img zoom" onClick={() => handleZoom({coderhouse})} />
             </div>
           </div>
         </article>
@@ -163,7 +163,7 @@ const Curriculum = () => {
               Se realizó y completó con éxito el curso en Udemy. La duración fue de 30.5 horas. El estudio recorrió algunas de las tecnologías más usadas como Django, Flask y Tkinter. Se cumplió satisfactoriamente con todos los requisitos académicos exigidos.
             </p>
             <div className="timeline_certificate">
-              <img src={masterenpython} alt="Certificado Udemy Python" className="certificate__img zoom" onClick={() => handleZoom('/assets/udemypython.jpg')} />
+              <img src={masterenpython} alt="Certificado Udemy Python" className="certificate__img zoom" onClick={() => handleZoom({masterenpython})} />
             </div>
           </div>
         </article>
@@ -180,7 +180,7 @@ const Curriculum = () => {
               Se completó con éxito el curso en Udemy. La duración fue de 4 horas de video. Se cumplió satisfactoriamente con todos los requisitos académicos exigidos.
             </p>
             <div className="timeline_certificate">
-              <img src={html} alt="Certificado HTML y CSS" className="certificate__img zoom" onClick={() => handleZoom('/assets/html.jpg')} />
+              <img src={html} alt="Certificado HTML y CSS" className="certificate__img zoom" onClick={() => handleZoom({html})} />
             </div>
           </div>
         </article>
@@ -197,7 +197,7 @@ const Curriculum = () => {
               Se realizó y completó con éxito el curso en Udemy. La duración fue de 19.5 horas de video. Se cumplió satisfactoriamente con todos los requisitos académicos exigidos.
             </p>
             <div className="timeline_certificate">
-              <img src={python_ecommerce} alt="Certificado Ecommerce" className="certificate__img zoom" onClick={() => handleZoom('/assets/python_ecommerce.jpg')} />
+              <img src={python_ecommerce} alt="Certificado Ecommerce" className="certificate__img zoom" onClick={() => handleZoom({python_ecommerce})} />
             </div>
           </div>
         </article>

@@ -54,27 +54,19 @@
 
 .area5r{
     grid-area: 12 / 4 / 14 / 7;
-    background-image: url('../assets/negro_textura.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(0,0,0);
     backdrop-filter: blur(30px);
 }
 
 .area6r{
     grid-area: 12 / 7 / 14 / 11;
-    background-image: url('../assets/negro_textura.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
 }
 
 .area7r{
     grid-area: 12 / 11 / 14 / 14;
-    background-image: url('../assets/negro_textura.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
 }
 
 .area3a-reseñas {

@@ -17,9 +17,15 @@
     --color-layout2: #787878;
 }
 
+
+:root{
+    --back-gris: var(--back-gris);
+
+}
+
 @font-face{
     font-family: 'ambiguity';
-    src: url(../fonts/FontsFree-Net-Ambiguity4.ttf) format('truetype');
+    src: url('../fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -66,7 +72,7 @@
 
 .area4a {
     grid-area: 2 / 4 / 6 / 11;
-    background-image: url('../assets/backgris.webp');
+    background-image: var(--back-gris);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,16 +80,16 @@
 
 .area5a {
     grid-area: 6 / 4 / 10 / 7;
-    background-image: url('../assets/backgris.webp');
+    background-image: var(--back-gris);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.area6a {
+/*.area6a {
     grid-area: 2 / 11 / 10 / 14;
     background-image: url('../assets/perfilfrente.webp');
-}
+}*/
 
 .area7a {
     grid-area: 10 / 4 / 14 / 7;
@@ -102,7 +108,7 @@
 
 .area10a{
     grid-area: 6 / 7 / 14 / 11;
-    background-image: url('../assets/backgris.webp');
+    background-image: var(--back-gris);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
