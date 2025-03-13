@@ -19,7 +19,7 @@
 
 @font-face{
   font-family: 'ambiguity';
-  src: url('/pfiv7/src/fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
+  src: url(../fonts/FontsFree-Net-Ambiguity4.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -141,7 +141,7 @@ html, body {
 
 .area3 {
   grid-area: 2 / 2 / 7 / 5;
-  background-image: url(assets/un\ desarrollador\ backend\ trabajando\ en\ un\ entorno\ oscuro\,\ con\ el\ monitor\ iluminado\ mostrando\ líneas\ de\ código.png);
+  background-image: url(assets/backend_developer.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

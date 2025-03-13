@@ -18,20 +18,14 @@
 }
 
 
-:root{
-    --back-gris: url('../assets/backgris.webp');
-    --negro-textura: url('../assets/negro_textura.webp')
-}
 
 
 
 
 .area1co{
     grid-area: 2 / 4 / 9 / 9;
-    background-image: var(--back-gris);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -40,38 +34,41 @@
 
 .area2co{
     grid-area: 9 / 4 / 14 / 12;
-    background-image: var(--back-gris);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
     position: relative;
 }
 
 
 .area3co{
     grid-area: 2 / 9 / 6 / 12;
-    background-image: var(--negro-textura);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
 }
 
 
 .area4co{
     grid-area: 2 / 12 / 6 / 14;
-    background-image: var(--negro-textura);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
 }
 
 .area5co{
     grid-area: 6 / 9 / 9 / 11;
-    background-image: var(--back-gris);
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
 }
 
 .area6co{
     grid-area: 6 / 11 / 9 / 14;
-    background-image: var(--negro-textura);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
 }
 
 .area7co{
     grid-area: 9 / 12 / 14 / 14;
-    background-image: var(--negro-textura);
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
 }
 
 .area3a-contacto {

@@ -17,12 +17,7 @@
     --color-layout2: #787878;
 }
 
-:root{
-    --back-gris: url('../assets/backgris.webp');
-    --negro-textura: url('../assets/negro_textura.webp');
-    --backend: url('../assets/backend_developer.webp');
-    --frontend: url('../assets/frontend_developer.webp')
-}
+
 
 
 /* General */
@@ -61,10 +56,8 @@
 
 .area4c{
     grid-area: 2 / 4 / 14 / 7;
-    background-image: var(--back-gris);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,10 +69,8 @@
 
 .area5c{
     grid-area: 2 / 7 / 14 / 10;
-    background-image: var(--back-gris);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1066,7 +1057,7 @@ color: var(--color-secondary);
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: var(--frontend);
+    background-image: url(../assets/frontend_developer.webp);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -1171,7 +1162,7 @@ color: var(--color-secondary);
 
 .area3cu {
     grid-area: 4 / 12 / 9 / 14;
-    background-image: var(--backend);
+    background-image: url(../assets/backend_developer.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -1222,30 +1213,6 @@ color: var(--color-secondary);
     transition: opacity 1s ease-in-out, transform 1s ease-in-out;
 }
 
-
-/*@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeInReverse {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}*/
 
 .habilidades{
     display: flex;

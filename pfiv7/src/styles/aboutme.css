@@ -23,13 +23,6 @@
 
 }
 
-@font-face{
-    font-family: 'ambiguity';
-    src: url('../fonts/FontsFree-Net-Ambiguity4.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 .area1a {
     grid-area: 1 / 4 / 2 / 14;
     display: flex;
@@ -72,24 +65,21 @@
 
 .area4a {
     grid-area: 2 / 4 / 6 / 11;
-    background-image: var(--back-gris);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
 }
 
 .area5a {
     grid-area: 6 / 4 / 10 / 7;
-    background-image: var(--back-gris);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
 }
 
-/*.area6a {
+.area6a {
     grid-area: 2 / 11 / 10 / 14;
-    background-image: url('../assets/perfilfrente.webp');
-}*/
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
+}
 
 .area7a {
     grid-area: 10 / 4 / 14 / 7;
@@ -108,10 +98,8 @@
 
 .area10a{
     grid-area: 6 / 7 / 14 / 11;
-    background-image: var(--back-gris);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: rgb(211,211,211);
+    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
 }
 
 
