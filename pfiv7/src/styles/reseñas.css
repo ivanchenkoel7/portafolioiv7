@@ -20,46 +20,40 @@
 
 .area1r{
     grid-area: 2 / 4 / 7 / 9;
-    background: rgb(211,211,211);
-    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
+    background-image: url('../assets/backgris.webp');
 }
 
 
 .area2r{
     grid-area: 2 / 9 / 7 / 14;
-    background: rgb(211,211,211);
-    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
+    background-image: url('../assets/backgris.webp');
 }
 
 
 .area3r{
     grid-area: 7 / 4 / 12 / 9;
-    background: rgb(211,211,211);
-    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
+    background-image: url('../assets/backgris.webp');
 }
 
 .area4r{
     grid-area: 7 / 9 / 12 / 14;
-    background: rgb(211,211,211);
-    background: linear-gradient(115deg, rgba(211,211,211,1) 0%, rgba(169,169,169,1) 52%, rgba(128,128,128,1) 100%);
+    background-image: url('../assets/backgris.webp');
 }
 
 .area5r{
     grid-area: 12 / 4 / 14 / 7;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
     backdrop-filter: blur(30px);
 }
 
 .area6r{
     grid-area: 12 / 7 / 14 / 11;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
+    background: rgb(0,0,0);
 }
 
 .area7r{
     grid-area: 12 / 11 / 14 / 14;
     background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 20%, rgba(66,66,66,1) 40%, rgba(73,73,73,1) 60%, rgba(93,92,92,1) 80%, rgba(103,103,103,1) 100%);
 }
 
 .area3a-reseñas {
@@ -166,7 +160,7 @@
     font-family: 'Parkinsans', sans-serif;
     color: var(--color-primary);
     font-weight: 600;
-    width: 97%
+    width: 95%
 }
 
 .foot__card {

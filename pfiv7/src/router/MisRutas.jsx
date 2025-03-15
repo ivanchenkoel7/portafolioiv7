@@ -14,7 +14,6 @@ import aixaLanding from '../assets/videos/aixa-landing.mp4';
 import aixaEcommerce from '../assets/videos/aixa-ecommerce.mp4';
 import aixaGestion from '../assets/videos/aixa-gestion.mp4';
 
-
 const videoData = {
   1: { 
     src: aixaLanding, 
@@ -26,7 +25,6 @@ const videoData = {
     title: 'Aixa Energia - Ecommerce',
     description: 'Este Ecommerce se desarrolló para la empresa Aixa Energía como complemento de la Landing Page. Permite a los usuarios ver el catálogo de productos, agregarlos al carrito y realizar compras online. Cuenta con sistema de autenticación, perfil de usuario, historial de compras y panel de administración. Desarrollado con Django, utiliza PayPal como gateway de pagos. Cuenta con verificacion de cuenta por Email, recuperacion de contraseña, y un panel de administracion para el administrador del sitio. En este video podrán ver una demostración del Ecommerce, viendo todas las áreas que lo componen.'
   },
-
   3: { 
     src: aixaGestion, 
     title: 'Aixa Energia - Sistema de Gestion',
