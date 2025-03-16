@@ -178,15 +178,6 @@ html, body {
 
 
 
-.info__dolor {
-  width: 80%;
-  height: 80%;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(30px);
-  border-radius: 15px;
-  display: none;
-  transition: all 1s ease-in-out;
-}
 
 .subtitle__dato,
 .habilidades {

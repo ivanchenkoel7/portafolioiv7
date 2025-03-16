@@ -1166,6 +1166,7 @@ color: var(--color-secondary);
     background-repeat: no-repeat;
     transition: all 0.8s ease;
     filter: grayscale(100%);
+    
 }
 
 .area3cu:hover {
