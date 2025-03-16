@@ -1160,7 +1160,7 @@ color: var(--color-secondary);
 
 .area3cu {
     grid-area: 4 / 12 / 9 / 14;
-    background-image: url('../assets/backend_developer.webp');
+    background-image: url('../assets/backdev.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

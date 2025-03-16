@@ -10,9 +10,9 @@ import Contacto from '../components/Contacto';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import Reproductor from '../components/Reproductor';
-import aixaLanding from '../assets/videos/aixa-landing.mp4';
-import aixaEcommerce from '../assets/videos/aixa-ecommerce.mp4';
-import aixaGestion from '../assets/videos/aixa-gestion.mp4';
+import aixaLanding from '../assets/videos/landing.mp4';
+import aixaEcommerce from '../assets/videos/ecommerce.mp4';
+import aixaGestion from '../assets/videos/gestion.mp4';
 
 const videoData = {
   1: { 
