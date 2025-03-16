@@ -1060,3 +1060,83 @@ font-style: normal;
     }
 
 }
+
+@media (max-width: 375px){
+
+    .hamburger .x-icon {
+        font-size: 23px;
+        position: absolute;
+        top: -1px;
+        left: -10px;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 360px){
+
+    .profesion__inicio {
+        font-size: 17px;
+        letter-spacing: 2px;
+    }
+
+    .subtitle__img {
+        font-size: 27px;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: 6px;
+        margin-top: 3px;
+        font-size: 18px;
+    }
+
+    .footer__text {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .hamburger .x-icon {
+        font-size: 18px;
+        position: absolute;
+        top: -2px;
+        left: -8px;
+    }
+
+    .layout__menu {
+        position: absolute;
+        top: 46px;
+        left: 276px;
+        width: 24%;
+    }
+
+    .menu__overlay{
+        font-size: 13px;
+        top: 34px;
+    }
+
+    .menu__list {
+        margin-right: 15px;
+        gap: 50px;
+    }
+
+    .title__grid {
+        font-size: 12px;
+    }
+
+    .icon__list {
+        gap: 3.5rem;
+    }
+
+    .cv__overlay {
+        padding: 0.4rem 0.9rem;
+        margin-top: 20px;
+        font-size: 10px;
+    }
+
+}

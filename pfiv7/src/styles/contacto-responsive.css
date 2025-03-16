@@ -290,6 +290,30 @@
 }
 
 
+@media (max-width: 360px) {
+    .info__destacado {
+        font-size: 9px;
+    }
+
+    .form__button {
+        padding: 7px 7px;
+        /* margin-left: 15px; */
+        font-size: 10px;
+        position: absolute;
+        top: 230px;
+        left: 186px;
+    }
+
+    .contact__subtitle {
+        font-size: 7px;
+    }
+
+    .info__title {
+        font-size: 13px;
+    }
+}
+
+
 
 
 

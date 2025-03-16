@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import ModalContact from './ModalContact';
-import perfilcostado from '../assets/perfilcostadofinal.webp';
+import perfilcostado from '../assets/perfilcostado.webp';
 
 const Index = () => {
   const [showModal, setShowModal] = useState(false);

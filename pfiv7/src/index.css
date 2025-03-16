@@ -486,20 +486,6 @@ html, body {
   animation: slideOut 0.1s ease-out;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .area5 {
   grid-area: 7 / 1 / 14 / 11;
   background: rgb(0,0,0);
@@ -641,16 +627,6 @@ html, body {
 }
 
 
-/*.area25 {
-  grid-area: 7 / 1 / 14 / 4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1;
-  
-
-}*/
 
 .turnero__container {
   width: 100%;
@@ -702,6 +678,7 @@ html, body {
 .icon__icons button{
   border: none;
   padding: 5px 13px;
+  cursor: pointer;
 }
 
 .fa-brands {

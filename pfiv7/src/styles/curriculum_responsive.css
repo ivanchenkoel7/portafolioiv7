@@ -586,17 +586,77 @@
     }
 
 
+}
 
 
+@media (max-width: 360px) {
 
+    .knowledges__option {
+        padding: 0.2rem 0.5rem;
+        margin: 3px;
+        font-size: 9px;
+    }
 
+    .resume__subtitle2 {
+        font-size: 13px;
+    }
 
+    .timeline__title {
+        font-size: 11px;
+        position: relative;
+        top: -56px;
+        left: 122px;
+    }
 
+    .timeline__header {
+        text-align: left;
+        padding-left: 0.5rem;
+    }
+    .timeline__text {
+        font-size: 10px;
+        font-family: "Montserrat";
+        position: relative;
+        top: -50px;
+        left: 123px;
+        width: 84%;
+    }
 
+    .timeline__year {
+        font-size: 11px;
+    }
 
+    .timeline__location {
+        font-size: 11px;
+    }
 
+    .certificate__icon {
+        font-size: 17px;
+        margin-left: 3px;
+    }
 
+    .timeline_certificate {
+        width: 300px;
+        height: 150px;
+        top: -34px;
+        left: 60px;
+    }
 
+    .skill__cont img, .skill__cont2 img, .skill__cont3 img, .skill__cont4 img, .skill__cont5 img, .skill__cont6 img, .skill__cont7 img, .skill__cont8 img, .skill__cont9 img, .skill__cont10 img, .skill__cont11 img, .skill__cont12 img {
+        width: 40px;
+        height: 40px;
+    }
 
+    .skill__cont8:hover .soft__name8, .skill__cont9:hover .soft__name9, .skill__cont10:hover .soft__name10, .skill__cont11:hover .soft__name11, .skill__cont12:hover .soft__name12 {
+        bottom: 35px;
+    }
+
+    .skill__cont .soft__name, .skill__cont2 .soft__name2, .skill__cont3 .soft__name3, .skill__cont4 .soft__name4, .skill__cont5 .soft__name5, .skill__cont6 .soft__name6, .skill__cont7 .soft__name7, .skill__cont8 .soft__name8, .skill__cont9 .soft__name9, .skill__cont10 .soft__name10, .skill__cont11 .soft__name11, .skill__cont12 .soft__name12 {
+        font-size: 6px;
+        padding: 3px;
+    }
+
+    .skill__cont:hover .soft__name, .skill__cont2:hover .soft__name2, .skill__cont3:hover .soft__name3, .skill__cont4:hover .soft__name4, .skill__cont5:hover .soft__name5, .skill__cont6:hover .soft__name6, .skill__cont7:hover .soft__name7 {
+        top: 35px;
+    }
 
 }

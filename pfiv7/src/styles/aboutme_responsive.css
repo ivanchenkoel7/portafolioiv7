@@ -569,3 +569,43 @@ font-style: normal;
 
 
 }
+
+@media (max-width: 360px) {
+
+    .personal-info__titleone {
+        font-size: 11px;
+        width: 95%;
+    }
+
+    .list__text {
+        font-size: 8.5px;
+    }
+
+    .list__subtitle {
+        font-size: 9px;
+    }
+
+    .personal-info__description {
+        font-size: 9px;
+    }
+
+    .design__text {
+        font-size: 9px;
+    }
+
+    .design__subtitule2 {
+        font-size: 11px;
+    }
+
+    .design__text2 {
+        font-size: 9px;
+        letter-spacing: 0.5px;
+    }
+
+    .design__subtitule {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+
+}
